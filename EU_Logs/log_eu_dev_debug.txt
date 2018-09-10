@@ -1,0 +1,1984 @@
+2018-08-29 13:33:06,061:debug:	Connecting to test.encodedcc.org
+2018-08-29 13:33:06,062:debug:	submission=False: In non-submission mode.
+2018-08-30 16:10:55,978:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:10:55,986:debug:	submission=False: In non-submission mode.
+2018-08-30 16:12:24,603:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:12:24,603:debug:	submission=False: In non-submission mode.
+2018-08-30 16:14:02,226:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:14:02,227:debug:	submission=False: In non-submission mode.
+2018-08-30 16:16:05,557:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:16:05,557:debug:	submission=False: In non-submission mode.
+2018-08-30 16:17:10,612:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:17:10,613:debug:	submission=False: In non-submission mode.
+2018-08-30 16:22:01,013:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:22:01,013:debug:	submission=False: In non-submission mode.
+2018-08-30 16:24:28,446:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:24:28,447:debug:	submission=False: In non-submission mode.
+2018-08-30 16:27:28,543:debug:	Connecting to test.encodedcc.org
+2018-08-30 16:27:28,544:debug:	submission=False: In non-submission mode.
+2018-08-30 17:19:14,982:debug:	Connecting to test.encodedcc.org
+2018-08-30 17:19:14,983:debug:	submission=False: In non-submission mode.
+2018-08-30 17:28:07,159:debug:	Connecting to test.encodedcc.org
+2018-08-30 17:28:07,161:debug:	submission=False: In non-submission mode.
+2018-08-30 17:40:36,701:debug:	Connecting to test.encodedcc.org
+2018-08-30 17:40:36,701:debug:	submission=False: In non-submission mode.
+2018-08-30 17:50:36,250:debug:	Connecting to test.encodedcc.org
+2018-08-30 17:50:36,251:debug:	submission=False: In non-submission mode.
+2018-08-30 20:44:00,385:debug:	Connecting to test.encodedcc.org
+2018-08-30 20:44:00,395:debug:	submission=False: In non-submission mode.
+2018-08-30 20:47:55,320:debug:	Connecting to test.encodedcc.org
+2018-08-30 20:47:55,320:debug:	submission=False: In non-submission mode.
+2018-08-30 20:54:00,430:debug:	Connecting to test.encodedcc.org
+2018-08-30 20:54:00,431:debug:	submission=False: In non-submission mode.
+2018-08-30 21:18:20,700:debug:	Connecting to test.encodedcc.org
+2018-08-30 21:18:20,701:debug:	submission=False: In non-submission mode.
+2018-08-31 08:40:58,608:debug:	Connecting to test.encodedcc.org
+2018-08-31 08:40:58,611:debug:	submission=False: In non-submission mode.
+2018-08-31 08:42:12,464:debug:	Connecting to test.encodedcc.org
+2018-08-31 08:42:12,465:debug:	submission=False: In non-submission mode.
+2018-08-31 08:44:42,971:debug:	Connecting to test.encodedcc.org
+2018-08-31 08:44:42,972:debug:	submission=False: In non-submission mode.
+2018-08-31 10:31:58,009:debug:	Connecting to test.encodedcc.org
+2018-08-31 10:31:58,011:debug:	submission=False: In non-submission mode.
+2018-08-31 10:41:17,165:debug:	Connecting to test.encodedcc.org
+2018-08-31 10:41:17,165:debug:	submission=False: In non-submission mode.
+2018-08-31 10:48:51,466:debug:	Connecting to test.encodedcc.org
+2018-08-31 10:48:51,466:debug:	submission=False: In non-submission mode.
+2018-08-31 11:05:45,275:debug:	Connecting to test.encodedcc.org
+2018-08-31 11:05:45,276:debug:	submission=False: In non-submission mode.
+2018-08-31 11:25:44,373:debug:	Connecting to test.encodedcc.org
+2018-08-31 11:25:44,375:debug:	submission=False: In non-submission mode.
+2018-08-31 12:01:46,708:debug:	Connecting to test.encodedcc.org
+2018-08-31 12:01:46,708:debug:	submission=False: In non-submission mode.
+2018-08-31 14:03:07,140:debug:	
+IN post().
+2018-08-31 14:04:08,365:debug:	
+IN post().
+2018-08-31 14:04:44,687:debug:	
+IN post().
+2018-08-31 14:12:53,922:debug:	
+IN post().
+2018-08-31 14:13:50,913:debug:	
+IN post().
+2018-08-31 14:26:54,742:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:26:54,745:debug:	submission=False: In non-submission mode.
+2018-08-31 14:28:55,343:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:28:55,343:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:28:55,345:debug:	submission=False: In non-submission mode.
+2018-08-31 14:28:55,345:debug:	submission=False: In non-submission mode.
+2018-08-31 14:43:05,430:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:43:05,430:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:43:05,430:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:43:05,433:debug:	submission=False: In non-submission mode.
+2018-08-31 14:43:05,433:debug:	submission=False: In non-submission mode.
+2018-08-31 14:43:05,433:debug:	submission=False: In non-submission mode.
+2018-08-31 14:44:18,868:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:44:18,870:debug:	submission=False: In non-submission mode.
+2018-08-31 14:44:19,122:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:44:19,122:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:44:19,124:debug:	submission=False: In non-submission mode.
+2018-08-31 14:44:19,124:debug:	submission=False: In non-submission mode.
+2018-08-31 14:55:41,111:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:55:41,115:debug:	submission=False: In non-submission mode.
+2018-08-31 14:55:42,380:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:55:42,380:debug:	Connecting to test.encodedcc.org
+2018-08-31 14:55:42,382:debug:	submission=False: In non-submission mode.
+2018-08-31 14:55:42,382:debug:	submission=False: In non-submission mode.
+2018-09-05 14:01:46,839:debug:	Connecting to test.encodedcc.org
+2018-09-05 14:01:46,850:debug:	submission=False: In non-submission mode.
+2018-09-05 14:01:47,191:debug:	Connecting to test.encodedcc.org
+2018-09-05 14:01:47,191:debug:	Connecting to test.encodedcc.org
+2018-09-05 14:01:47,192:debug:	submission=False: In non-submission mode.
+2018-09-05 14:01:47,192:debug:	submission=False: In non-submission mode.
+2018-09-06 20:28:05,299:debug:	Connecting to test.encodedcc.org
+2018-09-06 20:28:05,302:debug:	submission=False: In non-submission mode.
+2018-09-06 20:28:05,768:debug:	Connecting to test.encodedcc.org
+2018-09-06 20:28:05,768:debug:	Connecting to test.encodedcc.org
+2018-09-06 20:28:05,770:debug:	submission=False: In non-submission mode.
+2018-09-06 20:28:05,770:debug:	submission=False: In non-submission mode.
+2018-09-06 20:32:33,927:debug:	Connecting to test.encodedcc.org
+2018-09-06 20:32:33,928:debug:	submission=False: In non-submission mode.
+2018-09-06 20:32:34,423:debug:	Connecting to test.encodedcc.org
+2018-09-06 20:32:34,423:debug:	Connecting to test.encodedcc.org
+2018-09-06 20:32:34,425:debug:	submission=False: In non-submission mode.
+2018-09-06 20:32:34,425:debug:	submission=False: In non-submission mode.
+2018-09-06 20:32:35,024:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=be3288a9e40c30a086c2b72a7cecdb9e&type=File&limit=all.
+2018-09-06 20:32:35,024:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=be3288a9e40c30a086c2b72a7cecdb9e&type=File&limit=all.
+2018-09-06 20:32:35,559:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=24eebed0eb2cb031d05d0d67f373ac02&type=File&limit=all.
+2018-09-06 20:32:35,559:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=24eebed0eb2cb031d05d0d67f373ac02&type=File&limit=all.
+2018-09-06 20:32:35,957:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=d375e5eea521e0638c727d3e3a4b3b21&type=File&limit=all.
+2018-09-06 20:32:35,957:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=d375e5eea521e0638c727d3e3a4b3b21&type=File&limit=all.
+2018-09-06 20:32:36,326:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=d48829b89549efaf9d55477d4a3420c2&type=File&limit=all.
+2018-09-06 20:32:36,326:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=d48829b89549efaf9d55477d4a3420c2&type=File&limit=all.
+2018-09-09 13:28:25,659:debug:	Connecting to test.encodedcc.org
+2018-09-09 13:28:25,662:debug:	submission=False: In non-submission mode.
+2018-09-09 13:28:26,472:debug:	Connecting to test.encodedcc.org
+2018-09-09 13:28:26,472:debug:	Connecting to test.encodedcc.org
+2018-09-09 13:28:26,481:debug:	submission=False: In non-submission mode.
+2018-09-09 13:28:26,481:debug:	submission=False: In non-submission mode.
+2018-09-09 13:28:27,041:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 13:28:27,041:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 13:28:27,533:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 13:28:27,533:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 16:21:12,345:debug:	
+IN post().
+2018-09-09 16:21:12,345:debug:	
+IN post().
+2018-09-09 16:24:56,443:debug:	
+IN post().
+2018-09-09 16:24:56,443:debug:	
+IN post().
+2018-09-09 16:26:28,072:debug:	
+IN post().
+2018-09-09 16:26:28,072:debug:	
+IN post().
+2018-09-09 16:29:15,902:debug:	
+IN post().
+2018-09-09 16:29:15,902:debug:	
+IN post().
+2018-09-09 16:30:34,308:debug:	
+IN post().
+2018-09-09 16:30:34,308:debug:	
+IN post().
+2018-09-09 16:30:57,472:debug:	
+IN post().
+2018-09-09 16:30:57,472:debug:	
+IN post().
+2018-09-09 16:32:05,597:debug:	
+IN post().
+2018-09-09 16:32:05,597:debug:	
+IN post().
+2018-09-09 16:32:05,600:debug:	<<<<<< POSTING anshul-kundaje:test_alias To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:test_alias"
+  ],
+  "analysis_step_version": "kundaje-lab-atac-seq-trim-align-filter-single-rep-step-v-1-0",
+  "status": "released"
+}
+
+
+2018-09-09 16:32:05,600:debug:	<<<<<< POSTING anshul-kundaje:test_alias To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:test_alias"
+  ],
+  "analysis_step_version": "kundaje-lab-atac-seq-trim-align-filter-single-rep-step-v-1-0",
+  "status": "released"
+}
+
+
+2018-09-09 16:32:05,935:debug:	Success.
+2018-09-09 16:32:05,935:debug:	Success.
+2018-09-09 16:32:59,364:debug:	
+IN post().
+2018-09-09 16:32:59,364:debug:	
+IN post().
+2018-09-09 16:32:59,366:debug:	<<<<<< POSTING anshul-kundaje:test_alias To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:test_alias"
+  ],
+  "analysis_step_version": "kundaje-lab-atac-seq-trim-align-filter-single-rep-step-v-1-0",
+  "status": "released"
+}
+
+
+2018-09-09 16:32:59,366:debug:	<<<<<< POSTING anshul-kundaje:test_alias To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:test_alias"
+  ],
+  "analysis_step_version": "kundaje-lab-atac-seq-trim-align-filter-single-rep-step-v-1-0",
+  "status": "released"
+}
+
+
+2018-09-09 16:32:59,612:debug:	{'@type': ['HTTPConflict', 'Error'], 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', 'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:test_alias')]"}
+2018-09-09 16:32:59,612:debug:	{'@type': ['HTTPConflict', 'Error'], 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', 'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:test_alias')]"}
+2018-09-09 16:32:59,614:debug:	>>>>>>GETTING anshul-kundaje:test_alias From DCC with URL https://test.encodedcc.org/anshul-kundaje:test_alias/?format=json
+2018-09-09 16:32:59,614:debug:	>>>>>>GETTING anshul-kundaje:test_alias From DCC with URL https://test.encodedcc.org/anshul-kundaje:test_alias/?format=json
+2018-09-09 16:32:59,993:debug:	Will not POST 'anshul-kundaje:test_alias' since it already exists with aliases '['anshul-kundaje:test_alias']'.
+2018-09-09 16:32:59,993:debug:	Will not POST 'anshul-kundaje:test_alias' since it already exists with aliases '['anshul-kundaje:test_alias']'.
+2018-09-09 16:44:08,297:debug:	
+IN post().
+2018-09-09 16:44:08,297:debug:	
+IN post().
+2018-09-09 16:44:15,966:debug:	
+IN post().
+2018-09-09 16:44:15,966:debug:	
+IN post().
+2018-09-09 16:44:15,968:debug:	<<<<<< POSTING atac-test:test_alias To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "atac-test:test_alias"
+  ],
+  "analysis_step_version": "kundaje-lab-atac-seq-trim-align-filter-single-rep-step-v-1-0",
+  "status": "released"
+}
+
+
+2018-09-09 16:44:15,968:debug:	<<<<<< POSTING atac-test:test_alias To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "atac-test:test_alias"
+  ],
+  "analysis_step_version": "kundaje-lab-atac-seq-trim-align-filter-single-rep-step-v-1-0",
+  "status": "released"
+}
+
+
+2018-09-09 16:44:16,249:debug:	Failed to POST atac-test:test_alias
+2018-09-09 16:44:16,249:debug:	Failed to POST atac-test:test_alias
+2018-09-09 16:44:16,250:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 16:44:16,250:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 16:44:16,251:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'atac-test:test_alias' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 16:44:16,251:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'atac-test:test_alias' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 16:49:13,741:debug:	
+IN post().
+2018-09-09 16:49:13,741:debug:	
+IN post().
+2018-09-09 17:59:32,078:debug:	Connecting to test.encodedcc.org
+2018-09-09 17:59:32,087:debug:	submission=False: In non-submission mode.
+2018-09-09 17:59:32,624:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 17:59:33,087:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 17:59:33,408:debug:	
+IN post().
+2018-09-09 17:59:33,410:debug:	<<<<<< POSTING atac-test:test_alias To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "atac-test:test_alias"
+  ],
+  "analysis_step_version": "kundaje-lab-atac-seq-trim-align-filter-single-rep-step-v-1-0",
+  "status": "released"
+}
+
+
+2018-09-09 17:59:33,633:debug:	Failed to POST atac-test:test_alias
+2018-09-09 17:59:33,635:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 17:59:33,636:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'atac-test:test_alias' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 18:06:13,312:debug:	Connecting to test.encodedcc.org
+2018-09-09 18:06:13,313:debug:	submission=False: In non-submission mode.
+2018-09-09 18:06:13,888:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 18:06:14,333:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 18:08:41,672:debug:	Connecting to test.encodedcc.org
+2018-09-09 18:08:41,675:debug:	submission=False: In non-submission mode.
+2018-09-09 18:08:42,221:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 18:08:42,589:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 18:09:38,151:debug:	Connecting to test.encodedcc.org
+2018-09-09 18:09:38,154:debug:	submission=False: In non-submission mode.
+2018-09-09 18:09:38,782:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 18:09:39,183:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 18:09:39,469:debug:	
+IN post().
+2018-09-09 18:09:39,470:debug:	<<<<<< POSTING anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_version and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-09 18:09:39,692:debug:	Failed to POST anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:09:39,693:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 18:09:39,694:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    },
+    {
+      "description": "Additional properties are not allowed ('analysis_step_version' was unexpected)",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'software_versions' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'analysis_step' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'minor_version' is a required property",
+      "location": "body",
+      "name": []
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 18:10:52,278:debug:	
+IN post().
+2018-09-09 18:10:52,280:debug:	<<<<<< POSTING anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_version and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "atac-seq-trim-align-filter-step-run-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-09 18:10:52,537:debug:	Failed to POST anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:10:52,539:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 18:10:52,541:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    },
+    {
+      "description": "Additional properties are not allowed ('analysis_step_version' was unexpected)",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'software_versions' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'analysis_step' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'minor_version' is a required property",
+      "location": "body",
+      "name": []
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 18:15:24,036:debug:	Connecting to test.encodedcc.org
+2018-09-09 18:15:24,038:debug:	submission=False: In non-submission mode.
+2018-09-09 18:15:24,508:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 18:15:24,949:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 18:15:25,237:debug:	
+IN post().
+2018-09-09 18:15:25,239:debug:	<<<<<< POSTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_version and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-09 18:15:25,459:debug:	Failed to POST anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:15:25,460:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 18:15:25,462:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "Additional properties are not allowed ('analysis_step_version' was unexpected)",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'software_versions' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'analysis_step' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'minor_version' is a required property",
+      "location": "body",
+      "name": []
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 18:18:33,091:debug:	
+IN post().
+2018-09-09 18:18:33,099:debug:	<<<<<< POSTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_version and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "f5e138c5-68f5-4699-803e-17b1519fff93",
+  "status": "released"
+}
+
+
+2018-09-09 18:18:33,344:debug:	Failed to POST anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:18:33,346:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 18:18:33,347:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "Additional properties are not allowed ('analysis_step_version' was unexpected)",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'software_versions' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'analysis_step' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'minor_version' is a required property",
+      "location": "body",
+      "name": []
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 18:19:06,567:debug:	
+IN post().
+2018-09-09 18:19:06,569:debug:	<<<<<< POSTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_version and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-09 18:19:06,839:debug:	Failed to POST anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:19:06,840:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-09 18:19:06,841:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "Additional properties are not allowed ('analysis_step_version' was unexpected)",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'software_versions' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'analysis_step' is a required property",
+      "location": "body",
+      "name": []
+    },
+    {
+      "description": "'minor_version' is a required property",
+      "location": "body",
+      "name": []
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-09 18:19:16,587:debug:	Connecting to test.encodedcc.org
+2018-09-09 18:19:16,588:debug:	submission=False: In non-submission mode.
+2018-09-09 18:19:17,054:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-09 18:19:17,439:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-09 18:19:17,729:debug:	
+IN post().
+2018-09-09 18:19:17,731:debug:	<<<<<< POSTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-09 18:19:17,966:debug:	Success.
+2018-09-09 18:19:36,471:debug:	
+IN post().
+2018-09-09 18:19:36,472:debug:	<<<<<< POSTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-09 18:19:36,874:debug:	{'description': 'There was a conflict when trying to complete your request.', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict', 'status': 'error'}
+2018-09-09 18:19:36,875:debug:	>>>>>>GETTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-09 18:19:38,241:debug:	Will not POST 'anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-09 18:20:32,890:debug:	
+IN post().
+2018-09-09 18:20:32,892:debug:	<<<<<< POSTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-09 18:20:33,151:debug:	{'@type': ['HTTPConflict', 'Error'], 'detail': "Keys conflict: [('alias', 'anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, 'title': 'Conflict', 'status': 'error', 'description': 'There was a conflict when trying to complete your request.'}
+2018-09-09 18:20:33,152:debug:	>>>>>>GETTING anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-09 18:20:33,519:debug:	Will not POST 'anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-09 22:46:48,201:debug:	>>>>>>GETTING ENCFF906UQF From DCC with URL https://test.encodedcc.org/ENCFF906UQF/?format=json
+2018-09-09 22:46:53,265:debug:	>>>>>>GETTING ENCFF906UQF From DCC with URL https://test.encodedcc.org/ENCFF906UQF/?format=json
+2018-09-09 22:47:31,827:debug:	>>>>>>GETTING 8eb6d2a8aa8ea1cc41bb8253b5c64936 From DCC with URL https://test.encodedcc.org/8eb6d2a8aa8ea1cc41bb8253b5c64936/?format=json
+2018-09-09 22:47:32,119:debug:	NOT FOUND
+2018-09-09 22:47:38,725:debug:	>>>>>>GETTING 8eb6d2a8aa8ea1cc41bb8253b5c64936 From DCC with URL https://test.encodedcc.org/8eb6d2a8aa8ea1cc41bb8253b5c64936/?format=json
+2018-09-09 22:47:39,056:debug:	NOT FOUND
+2018-09-09 22:47:40,989:debug:	>>>>>>GETTING 8eb6d2a8aa8ea1cc41bb8253b5c64936 From DCC with URL https://test.encodedcc.org/8eb6d2a8aa8ea1cc41bb8253b5c64936/?format=json
+2018-09-09 22:47:41,307:debug:	NOT FOUND
+2018-09-09 23:01:00,728:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=8eb6d2a8aa8ea1cc41bb8253b5c64936&limit=all.
+2018-09-09 23:31:42,304:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=8eb6d2a8aa8ea1cc41bb8253b5c64936&limit=all.
+2018-09-09 23:32:21,799:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=8eb6d2a8aa8ea1cc41bb8253b5c64936&type=File&limit=all.
+2018-09-09 23:32:59,018:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=8eb6aa8ea1cc41bb8253b5c64936&type=File&limit=all.
+2018-09-09 23:33:56,502:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=8eb6d2a8aa8ea1cc41bb8253b5c64936&type=File&limit=all.
+2018-09-10 00:01:49,580:debug:	Connecting to test.encodedcc.org
+2018-09-10 00:01:49,583:debug:	submission=False: In non-submission mode.
+2018-09-10 00:01:50,197:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 00:01:50,641:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 00:02:22,896:debug:	Connecting to test.encodedcc.org
+2018-09-10 00:02:22,899:debug:	submission=False: In non-submission mode.
+2018-09-10 00:02:23,407:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 00:02:23,766:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 00:05:18,673:debug:	Connecting to test.encodedcc.org
+2018-09-10 00:05:18,675:debug:	submission=False: In non-submission mode.
+2018-09-10 00:05:19,192:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 00:05:19,641:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 00:05:19,999:debug:	
+IN post().
+2018-09-10 00:05:20,001:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 00:05:20,241:debug:	Success.
+2018-09-10 00:13:02,607:debug:	Connecting to test.encodedcc.org
+2018-09-10 00:13:02,610:debug:	submission=False: In non-submission mode.
+2018-09-10 00:13:03,190:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 00:13:04,621:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 00:13:04,904:debug:	
+IN post().
+2018-09-10 00:13:04,906:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 00:13:05,278:debug:	{'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', '@type': ['HTTPConflict', 'Error']}
+2018-09-10 00:13:05,279:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 00:13:05,647:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 00:13:32,135:debug:	Connecting to test.encodedcc.org
+2018-09-10 00:13:32,137:debug:	submission=False: In non-submission mode.
+2018-09-10 00:13:32,623:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 00:13:32,976:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 00:13:33,274:debug:	
+IN post().
+2018-09-10 00:13:33,275:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 00:13:33,518:debug:	{'title': 'Conflict', '@type': ['HTTPConflict', 'Error'], 'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'description': 'There was a conflict when trying to complete your request.', 'status': 'error'}
+2018-09-10 00:13:33,520:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 00:13:33,904:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 09:46:39,119:debug:	>>>>>>GETTING ENCSR117PYB From DCC with URL https://test.encodedcc.org/ENCSR117PYB/?format=json
+2018-09-10 09:47:37,233:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 10:01:49,937:debug:	Connecting to test.encodedcc.org
+2018-09-10 10:01:49,940:debug:	submission=False: In non-submission mode.
+2018-09-10 10:01:50,533:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 10:07:53,766:debug:	Connecting to test.encodedcc.org
+2018-09-10 10:07:53,769:debug:	submission=False: In non-submission mode.
+2018-09-10 10:07:54,325:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 10:10:15,794:debug:	Connecting to test.encodedcc.org
+2018-09-10 10:10:15,798:debug:	submission=False: In non-submission mode.
+2018-09-10 10:10:16,511:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 10:10:17,885:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 10:10:18,493:debug:	
+IN post().
+2018-09-10 10:10:18,496:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 10:10:20,011:debug:	Success.
+2018-09-10 10:10:20,647:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 10:10:39,313:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:24:17,465:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:24:17,475:debug:	submission=False: In non-submission mode.
+2018-09-10 11:24:17,728:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:24:18,229:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:24:18,482:debug:	
+IN post().
+2018-09-10 11:24:18,484:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:24:18,643:debug:	{'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'title': 'Conflict', 'description': 'There was a conflict when trying to complete your request.', 'status': 'error', '@type': ['HTTPConflict', 'Error']}
+2018-09-10 11:24:18,645:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:24:19,107:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:24:19,343:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:26:13,419:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:26:13,422:debug:	submission=False: In non-submission mode.
+2018-09-10 11:26:13,657:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:26:13,896:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:26:14,096:debug:	
+IN post().
+2018-09-10 11:26:14,098:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:26:14,261:debug:	{'status': 'error', 'description': 'There was a conflict when trying to complete your request.', 'code': 409, '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]"}
+2018-09-10 11:26:14,262:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:26:14,530:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:26:14,735:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:30:24,597:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:30:24,599:debug:	submission=False: In non-submission mode.
+2018-09-10 11:30:24,905:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:30:25,136:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:30:25,363:debug:	
+IN post().
+2018-09-10 11:30:25,365:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:30:25,514:debug:	{'code': 409, 'status': 'error', 'title': 'Conflict', '@type': ['HTTPConflict', 'Error'], 'description': 'There was a conflict when trying to complete your request.', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]"}
+2018-09-10 11:30:25,515:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:30:25,783:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:30:26,012:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:31:47,686:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:31:47,689:debug:	submission=False: In non-submission mode.
+2018-09-10 11:31:47,929:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:31:48,175:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:31:48,378:debug:	
+IN post().
+2018-09-10 11:31:48,380:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:31:48,540:debug:	{'title': 'Conflict', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error'], 'status': 'error', 'code': 409, 'description': 'There was a conflict when trying to complete your request.'}
+2018-09-10 11:31:48,541:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:31:48,823:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:31:49,025:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:31:49,221:debug:	
+IN post().
+2018-09-10 11:31:49,223:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:31:49,376:debug:	Failed to POST anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-10 11:31:49,378:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-10 11:31:49,379:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'anshul-kundaje:atac-seq-trim-align-filter-step-single-rep-v1' is not of type 'AnalysisStepVersion'",
+      "location": "body",
+      "name": [
+        "analysis_step_version"
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-10 11:40:29,134:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:40:29,136:debug:	submission=False: In non-submission mode.
+2018-09-10 11:40:29,409:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:40:29,719:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:40:29,947:debug:	
+IN post().
+2018-09-10 11:40:29,949:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:40:30,104:debug:	{'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', 'code': 409, 'status': 'error', '@type': ['HTTPConflict', 'Error'], 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]"}
+2018-09-10 11:40:30,105:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:40:30,376:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:40:30,604:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:40:30,786:debug:	
+IN post().
+2018-09-10 11:40:30,788:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:40:30,949:debug:	{'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', 'code': 409, 'status': 'error', '@type': ['HTTPConflict', 'Error'], 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]"}
+2018-09-10 11:40:30,950:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:40:31,235:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:40:57,713:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:40:57,715:debug:	submission=False: In non-submission mode.
+2018-09-10 11:40:57,936:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:40:58,177:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:40:58,394:debug:	
+IN post().
+2018-09-10 11:40:58,395:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:40:58,553:debug:	{'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'status': 'error', '@type': ['HTTPConflict', 'Error'], 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict'}
+2018-09-10 11:40:58,554:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:40:58,854:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:40:59,038:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:40:59,222:debug:	
+IN post().
+2018-09-10 11:40:59,224:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:40:59,382:debug:	{'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'status': 'error', '@type': ['HTTPConflict', 'Error'], 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict'}
+2018-09-10 11:40:59,383:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:40:59,647:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:40:59,672:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:40:59,895:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:45:04,396:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:45:04,406:debug:	submission=False: In non-submission mode.
+2018-09-10 11:45:04,730:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:45:05,003:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:45:05,217:debug:	
+IN post().
+2018-09-10 11:45:05,218:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:45:05,367:debug:	{'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'description': 'There was a conflict when trying to complete your request.', 'code': 409, 'status': 'error', 'title': 'Conflict', '@type': ['HTTPConflict', 'Error']}
+2018-09-10 11:45:05,368:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:45:05,626:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:45:05,849:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:45:25,306:debug:	
+IN post().
+2018-09-10 11:45:25,309:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:45:25,466:debug:	{'title': 'Conflict', 'description': 'There was a conflict when trying to complete your request.', 'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error']}
+2018-09-10 11:45:25,468:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:45:25,767:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:45:51,916:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:45:52,183:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:48:18,405:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:48:18,407:debug:	submission=False: In non-submission mode.
+2018-09-10 11:48:18,633:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:48:18,873:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:48:19,087:debug:	
+IN post().
+2018-09-10 11:48:19,089:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:48:19,243:debug:	{'code': 409, 'status': 'error', 'description': 'There was a conflict when trying to complete your request.', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict'}
+2018-09-10 11:48:19,244:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:48:19,509:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:48:19,725:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:48:19,914:debug:	
+IN post().
+2018-09-10 11:48:19,916:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:48:20,071:debug:	{'code': 409, 'title': 'Conflict', 'description': 'There was a conflict when trying to complete your request.', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error'], 'status': 'error'}
+2018-09-10 11:48:20,072:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:48:20,329:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:48:37,373:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:48:37,617:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:55:44,602:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:55:44,605:debug:	submission=False: In non-submission mode.
+2018-09-10 11:55:44,855:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:55:45,156:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:55:45,376:debug:	
+IN post().
+2018-09-10 11:55:45,378:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:55:45,535:debug:	{'@type': ['HTTPConflict', 'Error'], 'status': 'error', 'title': 'Conflict', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, 'description': 'There was a conflict when trying to complete your request.'}
+2018-09-10 11:55:45,536:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:55:45,824:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:55:46,087:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:55:46,278:debug:	
+IN post().
+2018-09-10 11:55:46,280:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:55:46,430:debug:	{'@type': ['HTTPConflict', 'Error'], 'code': 409, 'title': 'Conflict', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'status': 'error', 'description': 'There was a conflict when trying to complete your request.'}
+2018-09-10 11:55:46,431:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:55:46,701:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:55:51,318:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:55:51,557:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:57:10,697:debug:	Connecting to test.encodedcc.org
+2018-09-10 11:57:10,699:debug:	submission=False: In non-submission mode.
+2018-09-10 11:57:10,932:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:57:11,186:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:57:11,399:debug:	
+IN post().
+2018-09-10 11:57:11,401:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:57:11,553:debug:	{'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'description': 'There was a conflict when trying to complete your request.', '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict'}
+2018-09-10 11:57:11,554:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:57:11,838:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:57:12,023:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 11:57:12,212:debug:	
+IN post().
+2018-09-10 11:57:12,214:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 11:57:12,368:debug:	{'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'description': 'There was a conflict when trying to complete your request.', '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict'}
+2018-09-10 11:57:12,369:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 11:57:12,634:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:57:16,253:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 11:57:16,514:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 11:57:41,109:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 13:37:45,679:debug:	Connecting to test.encodedcc.org
+2018-09-10 13:37:45,689:debug:	submission=False: In non-submission mode.
+2018-09-10 13:37:45,945:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 13:37:46,220:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 13:37:46,430:debug:	
+IN post().
+2018-09-10 13:37:46,433:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 13:37:46,591:debug:	{'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, '@type': ['HTTPConflict', 'Error'], 'status': 'error', 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict'}
+2018-09-10 13:37:46,592:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 13:37:46,861:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:37:47,079:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 13:37:47,271:debug:	
+IN post().
+2018-09-10 13:37:47,273:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 13:37:47,418:debug:	{'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, '@type': ['HTTPConflict', 'Error'], 'status': 'error', 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict'}
+2018-09-10 13:37:47,420:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 13:37:47,688:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:37:47,715:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 13:37:47,931:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 13:37:48,140:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 13:43:56,585:debug:	Connecting to test.encodedcc.org
+2018-09-10 13:43:56,587:debug:	submission=False: In non-submission mode.
+2018-09-10 13:43:56,885:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 13:43:57,122:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 13:43:57,334:debug:	
+IN post().
+2018-09-10 13:43:57,336:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 13:43:57,495:debug:	{'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'status': 'error', 'description': 'There was a conflict when trying to complete your request.', 'code': 409, '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict'}
+2018-09-10 13:43:57,496:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 13:43:57,762:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:43:58,028:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 13:43:58,222:debug:	
+IN post().
+2018-09-10 13:43:58,224:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 13:43:58,379:debug:	{'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'status': 'error', 'description': 'There was a conflict when trying to complete your request.', 'code': 409, '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict'}
+2018-09-10 13:43:58,380:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 13:43:58,671:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:43:58,698:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 13:43:58,929:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 13:43:59,120:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 13:47:06,747:debug:	Connecting to test.encodedcc.org
+2018-09-10 13:47:06,756:debug:	submission=False: In non-submission mode.
+2018-09-10 13:47:06,996:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 13:47:07,237:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 13:47:07,446:debug:	
+IN post().
+2018-09-10 13:47:07,448:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 13:47:07,598:debug:	{'description': 'There was a conflict when trying to complete your request.', 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict'}
+2018-09-10 13:47:07,599:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 13:47:07,876:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:47:08,062:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 13:47:08,254:debug:	
+IN post().
+2018-09-10 13:47:08,255:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 13:47:08,410:debug:	{'description': 'There was a conflict when trying to complete your request.', 'status': 'error', '@type': ['HTTPConflict', 'Error'], 'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'title': 'Conflict'}
+2018-09-10 13:47:08,411:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 13:47:08,679:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:47:08,708:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 13:47:08,944:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 13:47:09,134:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:12:15,284:debug:	
+IN post().
+2018-09-10 14:12:15,287:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:12:15,457:debug:	{'description': 'There was a conflict when trying to complete your request.', 'status': 'error', 'code': 409, '@type': ['HTTPConflict', 'Error'], 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'title': 'Conflict'}
+2018-09-10 14:12:15,458:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:12:15,724:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:12:15,880:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:12:16,178:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:12:16,392:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:15:50,412:debug:	Connecting to test.encodedcc.org
+2018-09-10 14:15:50,415:debug:	submission=False: In non-submission mode.
+2018-09-10 14:15:50,731:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:15:50,985:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:15:51,213:debug:	
+IN post().
+2018-09-10 14:15:51,215:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:15:51,371:debug:	{'description': 'There was a conflict when trying to complete your request.', 'code': 409, '@type': ['HTTPConflict', 'Error'], 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'title': 'Conflict'}
+2018-09-10 14:15:51,372:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:15:51,659:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:15:51,893:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:15:52,074:debug:	
+IN post().
+2018-09-10 14:15:52,075:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:15:52,227:debug:	{'description': 'There was a conflict when trying to complete your request.', 'code': 409, '@type': ['HTTPConflict', 'Error'], 'status': 'error', 'title': 'Conflict', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]"}
+2018-09-10 14:15:52,229:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:15:52,493:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:15:52,548:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:15:52,782:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:15:52,980:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:19:52,329:debug:	Connecting to test.encodedcc.org
+2018-09-10 14:19:52,331:debug:	submission=False: In non-submission mode.
+2018-09-10 14:19:52,609:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:19:52,851:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:19:53,049:debug:	
+IN post().
+2018-09-10 14:19:53,051:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:19:53,201:debug:	{'description': 'There was a conflict when trying to complete your request.', 'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'title': 'Conflict', '@type': ['HTTPConflict', 'Error']}
+2018-09-10 14:19:53,203:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:19:53,468:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:19:53,681:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:19:53,862:debug:	
+IN post().
+2018-09-10 14:19:53,864:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:19:54,012:debug:	{'description': 'There was a conflict when trying to complete your request.', 'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'title': 'Conflict', '@type': ['HTTPConflict', 'Error']}
+2018-09-10 14:19:54,013:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:19:54,296:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:19:54,322:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:19:54,555:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:19:54,761:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:20:57,971:debug:	
+IN post().
+2018-09-10 14:22:09,773:debug:	
+IN post().
+2018-09-10 14:23:07,367:debug:	
+IN post().
+2018-09-10 14:28:02,041:debug:	Connecting to test.encodedcc.org
+2018-09-10 14:28:02,044:debug:	submission=False: In non-submission mode.
+2018-09-10 14:28:02,306:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:28:02,555:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:28:02,779:debug:	
+IN post().
+2018-09-10 14:28:02,781:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:28:02,940:debug:	{'title': 'Conflict', 'description': 'There was a conflict when trying to complete your request.', 'status': 'error', 'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error']}
+2018-09-10 14:28:02,941:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:28:03,209:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:28:03,458:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:28:03,646:debug:	
+IN post().
+2018-09-10 14:28:03,648:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:28:03,797:debug:	{'title': 'Conflict', 'description': 'There was a conflict when trying to complete your request.', 'status': 'error', 'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error']}
+2018-09-10 14:28:03,798:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:28:04,102:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:28:04,131:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:28:04,350:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:28:04,557:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:31:27,843:debug:	
+IN post().
+2018-09-10 14:37:45,983:debug:	
+IN post().
+2018-09-10 14:42:33,995:debug:	
+IN post().
+2018-09-10 14:42:33,996:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam To DCC with URL https://test.encodedcc.org/file and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam"
+  ],
+  "assembly": null,
+  "award": "U41HG007000",
+  "biological_replicates": 1,
+  "dataset": "/experiments/ENCSR117PYB/",
+  "derived_from": [
+    "/files/ENCFF695YHX/",
+    "/files/ENCFF549AFY/"
+  ],
+  "file_format": "bam",
+  "file_size": 2361067951,
+  "file_type": "bam",
+  "lab": "/labs/anshul-kundaje/",
+  "md5sum": "9589a4bffddf1cb1fe7b39737d460b5f",
+  "output_category": "alignment",
+  "output_type": "alignments",
+  "status": "released",
+  "step_run": "/analysis-step-runs/ce8ed9d4-2de6-41fe-ba64-09033c553ddb/",
+  "submitted_file_name": "ENCFF695YHX.trim.merged.nodup.bam",
+  "technical_replicates": "1_1"
+}
+
+
+2018-09-10 14:42:34,151:debug:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 14:42:34,158:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-10 14:42:34,160:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    },
+    {
+      "description": "None is not one of ['ce10', 'ce11', 'dm3', 'dm6', 'GRCh38-minimal', 'GRCh38', 'hg19', 'J02459.1', 'mm10-minimal', 'mm10', 'mm9']",
+      "location": "body",
+      "name": [
+        "assembly"
+      ]
+    },
+    {
+      "description": "None is not of type 'string'",
+      "location": "body",
+      "name": [
+        "assembly"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "output_category"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "file_type"
+      ]
+    },
+    {
+      "description": "'1_1' is not of type 'array'",
+      "location": "body",
+      "name": [
+        "technical_replicates"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "technical_replicates"
+      ]
+    },
+    {
+      "description": "1 is not of type 'array'",
+      "location": "body",
+      "name": [
+        "biological_replicates"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "biological_replicates"
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-10 14:44:49,156:debug:	Connecting to test.encodedcc.org
+2018-09-10 14:44:49,158:debug:	submission=False: In non-submission mode.
+2018-09-10 14:44:49,410:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:44:49,671:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:44:49,886:debug:	
+IN post().
+2018-09-10 14:44:49,888:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:44:50,043:debug:	{'@type': ['HTTPConflict', 'Error'], 'code': 409, 'title': 'Conflict', 'description': 'There was a conflict when trying to complete your request.', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'status': 'error'}
+2018-09-10 14:44:50,044:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:44:50,304:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:44:50,523:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:44:50,708:debug:	
+IN post().
+2018-09-10 14:44:50,710:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:44:50,858:debug:	{'@type': ['HTTPConflict', 'Error'], 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', 'code': 409, 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]"}
+2018-09-10 14:44:50,859:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:44:51,116:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:44:51,144:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:44:51,382:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:44:51,574:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:44:56,865:debug:	
+IN post().
+2018-09-10 14:46:23,403:debug:	Connecting to test.encodedcc.org
+2018-09-10 14:46:23,405:debug:	submission=False: In non-submission mode.
+2018-09-10 14:46:23,661:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:46:23,987:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:46:24,186:debug:	
+IN post().
+2018-09-10 14:46:24,188:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:46:24,340:debug:	{'@type': ['HTTPConflict', 'Error'], 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', 'status': 'error'}
+2018-09-10 14:46:24,342:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:46:24,635:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:46:24,819:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:46:25,005:debug:	
+IN post().
+2018-09-10 14:46:25,006:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 14:46:25,167:debug:	{'@type': ['HTTPConflict', 'Error'], 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'code': 409, 'description': 'There was a conflict when trying to complete your request.', 'title': 'Conflict', 'status': 'error'}
+2018-09-10 14:46:25,168:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 14:46:25,424:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:46:25,450:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 14:46:25,683:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 14:46:25,890:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:46:26,060:debug:	
+IN post().
+2018-09-10 14:46:26,061:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam To DCC with URL https://test.encodedcc.org/file and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam"
+  ],
+  "assembly": null,
+  "award": "U41HG007000",
+  "biological_replicates": [
+    1
+  ],
+  "dataset": "/experiments/ENCSR117PYB/",
+  "derived_from": [
+    "/files/ENCFF695YHX/",
+    "/files/ENCFF549AFY/"
+  ],
+  "file_format": "bam",
+  "file_size": 2361067951,
+  "file_type": "bam",
+  "lab": "/labs/anshul-kundaje/",
+  "md5sum": "9589a4bffddf1cb1fe7b39737d460b5f",
+  "output_category": "alignment",
+  "output_type": "alignments",
+  "status": "released",
+  "step_run": "/analysis-step-runs/ce8ed9d4-2de6-41fe-ba64-09033c553ddb/",
+  "submitted_file_name": "atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam",
+  "technical_replicates": [
+    "1_1"
+  ]
+}
+
+
+2018-09-10 14:46:26,213:debug:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 14:46:26,214:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-10 14:46:26,216:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    },
+    {
+      "description": "None is not one of ['ce10', 'ce11', 'dm3', 'dm6', 'GRCh38-minimal', 'GRCh38', 'hg19', 'J02459.1', 'mm10-minimal', 'mm10', 'mm9']",
+      "location": "body",
+      "name": [
+        "assembly"
+      ]
+    },
+    {
+      "description": "None is not of type 'string'",
+      "location": "body",
+      "name": [
+        "assembly"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "output_category"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "biological_replicates"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "file_type"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "technical_replicates"
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-10 14:49:15,207:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:49:26,993:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 14:49:59,615:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 15:35:32,621:debug:	Connecting to test.encodedcc.org
+2018-09-10 15:35:32,630:debug:	submission=False: In non-submission mode.
+2018-09-10 15:35:32,955:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 15:35:33,237:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 15:35:33,457:debug:	
+IN post().
+2018-09-10 15:35:33,459:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 15:35:33,615:debug:	{'description': 'There was a conflict when trying to complete your request.', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict', 'code': 409, 'status': 'error'}
+2018-09-10 15:35:33,616:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 15:35:33,914:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:35:34,200:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 15:35:34,423:debug:	
+IN post().
+2018-09-10 15:35:34,425:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 15:35:34,574:debug:	{'description': 'There was a conflict when trying to complete your request.', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", '@type': ['HTTPConflict', 'Error'], 'title': 'Conflict', 'code': 409, 'status': 'error'}
+2018-09-10 15:35:34,575:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 15:35:34,837:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:35:34,865:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 15:35:35,080:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 15:35:35,279:debug:	
+IN post().
+2018-09-10 15:35:35,281:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam To DCC with URL https://test.encodedcc.org/file and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam"
+  ],
+  "assembly": "GRCh38",
+  "award": "U41HG007000",
+  "biological_replicates": [
+    1
+  ],
+  "dataset": "/experiments/ENCSR117PYB/",
+  "derived_from": [
+    "/files/ENCFF695YHX/",
+    "/files/ENCFF549AFY/"
+  ],
+  "file_format": "bam",
+  "file_size": 2361067951,
+  "file_type": "bam",
+  "lab": "/labs/anshul-kundaje/",
+  "md5sum": "9589a4bffddf1cb1fe7b39737d460b5f",
+  "output_category": "alignment",
+  "output_type": "alignments",
+  "status": "released",
+  "step_run": "/analysis-step-runs/ce8ed9d4-2de6-41fe-ba64-09033c553ddb/",
+  "submitted_file_name": "atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam",
+  "technical_replicates": [
+    "1_1"
+  ]
+}
+
+
+2018-09-10 15:35:35,434:debug:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 15:35:35,436:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-10 15:35:35,437:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "output_category"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "file_type"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "technical_replicates"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "biological_replicates"
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-10 15:39:00,476:debug:	Connecting to test.encodedcc.org
+2018-09-10 15:39:00,479:debug:	submission=False: In non-submission mode.
+2018-09-10 15:39:00,765:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 15:39:00,990:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 15:39:49,720:debug:	Connecting to test.encodedcc.org
+2018-09-10 15:39:49,722:debug:	submission=False: In non-submission mode.
+2018-09-10 15:39:49,945:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 15:39:50,207:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 15:39:50,420:debug:	
+IN post().
+2018-09-10 15:39:50,423:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 15:39:50,571:debug:	{'title': 'Conflict', 'code': 409, 'description': 'There was a conflict when trying to complete your request.', '@type': ['HTTPConflict', 'Error'], 'status': 'error', 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]"}
+2018-09-10 15:39:50,573:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 15:39:50,850:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:39:51,141:debug:	>>>>>>GETTING experiments/ENCSR117PYB From DCC with URL https://test.encodedcc.org/experiments/ENCSR117PYB/?format=json
+2018-09-10 15:39:51,371:debug:	
+IN post().
+2018-09-10 15:39:51,372:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 To DCC with URL https://test.encodedcc.org/analysis_step_run and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398"
+  ],
+  "analysis_step_version": "anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1",
+  "status": "released"
+}
+
+
+2018-09-10 15:39:51,520:debug:	{'title': 'Conflict', 'code': 409, 'detail': "Keys conflict: [('alias', 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398')]", 'status': 'error', '@type': ['HTTPConflict', 'Error'], 'description': 'There was a conflict when trying to complete your request.'}
+2018-09-10 15:39:51,521:debug:	>>>>>>GETTING anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398 From DCC with URL https://test.encodedcc.org/anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398/?format=json
+2018-09-10 15:39:51,786:debug:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:39:51,814:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=6be014df65aedac462f4baf24701e394&type=File&limit=all.
+2018-09-10 15:39:52,032:debug:	Searching DCC with query https://test.encodedcc.org/search/?md5sum=0dd6cc4ee4ab7c000259aeec5fb3bc1c&type=File&limit=all.
+2018-09-10 15:41:10,866:debug:	
+IN post().
+2018-09-10 15:41:10,870:debug:	<<<<<< POSTING anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam To DCC with URL https://test.encodedcc.org/file and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam"
+  ],
+  "assembly": "GRCh38",
+  "award": "U41HG007000",
+  "biological_replicates": [
+    1
+  ],
+  "dataset": "/experiments/ENCSR117PYB/",
+  "derived_from": [
+    "/files/ENCFF695YHX/",
+    "/files/ENCFF549AFY/"
+  ],
+  "file_format": "bam",
+  "file_size": 2361067951,
+  "file_type": "bam",
+  "lab": "/labs/anshul-kundaje/",
+  "md5sum": "9589a4bffddf1cb1fe7b39737d460b5f",
+  "output_category": "alignment",
+  "output_type": "alignments",
+  "status": "released",
+  "step_run": "/analysis-step-runs/ce8ed9d4-2de6-41fe-ba64-09033c553ddb/",
+  "submitted_file_name": "atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam",
+  "technical_replicates": [
+    "1_1"
+  ]
+}
+
+
+2018-09-10 15:41:11,059:debug:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 15:41:11,061:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-10 15:41:11,065:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "'anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam' does not match \"^(?:alexander-hoffmann|alexander-rudensky|alexander-urban|ali-mortazavi|alkes-price|andrew-fire|anshul-kundaje|anton-valouev|axel-visel|barbara-wold|bill-noble|bin-yu|bing-ren|bradley-bernstein|brenton-graveley|charles-gersbach|chris-burge|christina-leslie|colin-dewey|david-gifford|david-gilbert|douglas-black|elliott-margulies|emery-bresnick|encode-awg|encode-consortium|encode-processing-pipeline|erez-lieberman|eric-lecuyer|eric-mendehall|ewan-birney|feng-yue|gene-yeo|george-stamatoyannopoulos|greg-cooper|gregory-crawford|guo-cheng-yuan|haiyan-huang|haiyuan-yu|howard-chang|j-michael-cherry|jason-ernst|jason-lieb|jay-shendure|jennifer-harrow|jeremy-luban|job-dekker|joe-ecker|john-lis|john-rinn|john-stamatoyannopoulos|jonathan-pritchard|joseph-costello|kenneth-offit|kevin-struhl|kevin-white|ladeana-hillier|laura-elnitski|len-pennacchio|leonard-lipovich|manolis-kellis|manuel-garber|maria-ciofani|mark-gerstein|mats-ljungman|matteo-pellegrini|michael-bassik|michael-beer|michael-hoffman|michael-snyder|morgan-giddings|nadav-ahituv|pardis-sabeti|paul-khavari|peggy-farnham|peter-bickel|peter-park|piero-carninci|rafael-irizarry|richard-myers|roadmap-epigenomics|rob-spitale|robert-klein|robert-waterston|roderic-guigo|ross-hardison|ryan-tewhey|scott-tenenbaum|sherman-weissman|souma-raychaudhuri|stephen-smale|sunduz-keles|susan-celniker|thomas-gingeras|thomas-tullius|tim-reddy|timothy-hubbard|ting-wang|tommi-jaakkola|unknown|valerie-reinke|vishwanath-iyer|w-james-kent|wei-wang|will-greenleaf|xiang-dong-fu|xiaole-shirley|xinshu-xiao|yi-xing|yijun-ruan|yin-shen|yoav-gilad|zhiping-weng|brian-oliver|david-macalpine|hugo-bellen|peter-cherbas|terry-orr-weaver|abby-dernburg|anthony-hyman|arshad-desai|david-miller|eric-lai|fabio-piano|frank-slack|gary-karpen|gregory-hannon|james-posakony|john-kim|julie-ahringer|kamran-ahmad|kris-gunsalus|lincoln-stein|michael-brent|michael-maccoss|mitzi-kuroda|nikolaus-rajewsky|norbert-perrimon|philip-green|sarah-elgin|steven-henikoff|steven-russell|susan-strome|vincenzo-pirrotta|MitaniLab|UofC-HGAC|wesley-hung|encode|modern|dnanexus|modencode|gencode|ggr|cgc|bloomington|dssc|kyoto|gtex|pgp|biochain|promocell|nichd):[a-zA-Z\\\\d_$.+!*,()'-]+(?:\\\\s[a-zA-Z\\\\d_$.+!*,()'-]+)*$\"",
+      "location": "body",
+      "name": [
+        "aliases",
+        0
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "output_category"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "file_type"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "biological_replicates"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "technical_replicates"
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}
+2018-09-10 15:42:56,024:debug:	
+IN post().
+2018-09-10 15:42:56,025:debug:	<<<<<< POSTING anshul-kundaje:22 To DCC with URL https://test.encodedcc.org/file and this payload:
+
+{
+  "aliases": [
+    "anshul-kundaje:22"
+  ],
+  "assembly": "GRCh38",
+  "award": "U41HG007000",
+  "biological_replicates": [
+    1
+  ],
+  "dataset": "/experiments/ENCSR117PYB/",
+  "derived_from": [
+    "/files/ENCFF695YHX/",
+    "/files/ENCFF549AFY/"
+  ],
+  "file_format": "bam",
+  "file_size": 2361067951,
+  "file_type": "bam",
+  "lab": "/labs/anshul-kundaje/",
+  "md5sum": "9589a4bffddf1cb1fe7b39737d460b5f",
+  "output_category": "alignment",
+  "output_type": "alignments",
+  "status": "released",
+  "step_run": "/analysis-step-runs/ce8ed9d4-2de6-41fe-ba64-09033c553ddb/",
+  "submitted_file_name": "atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam",
+  "technical_replicates": [
+    "1_1"
+  ]
+}
+
+
+2018-09-10 15:42:56,179:debug:	Failed to POST anshul-kundaje:22
+2018-09-10 15:42:56,180:debug:	<<<<<< DCC POST RESPONSE: 
+2018-09-10 15:42:56,181:debug:	{
+  "@type": [
+    "ValidationFailure",
+    "Error"
+  ],
+  "code": 422,
+  "description": "Failed validation",
+  "errors": [
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "technical_replicates"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "file_type"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "biological_replicates"
+      ]
+    },
+    {
+      "description": "submission disallowed",
+      "location": "body",
+      "name": [
+        "output_category"
+      ]
+    }
+  ],
+  "status": "error",
+  "title": "Unprocessable Entity"
+}

@@ -1,0 +1,142 @@
+2018-08-29 13:33:06,062:error:	Connecting to test.encodedcc.org
+2018-08-30 16:10:55,980:error:	Connecting to test.encodedcc.org
+2018-08-30 16:12:24,603:error:	Connecting to test.encodedcc.org
+2018-08-30 16:14:02,227:error:	Connecting to test.encodedcc.org
+2018-08-30 16:16:05,557:error:	Connecting to test.encodedcc.org
+2018-08-30 16:17:10,612:error:	Connecting to test.encodedcc.org
+2018-08-30 16:22:01,013:error:	Connecting to test.encodedcc.org
+2018-08-30 16:24:28,447:error:	Connecting to test.encodedcc.org
+2018-08-30 16:27:28,543:error:	Connecting to test.encodedcc.org
+2018-08-30 17:19:14,983:error:	Connecting to test.encodedcc.org
+2018-08-30 17:28:07,160:error:	Connecting to test.encodedcc.org
+2018-08-30 17:40:36,701:error:	Connecting to test.encodedcc.org
+2018-08-30 17:50:36,251:error:	Connecting to test.encodedcc.org
+2018-08-30 20:44:00,393:error:	Connecting to test.encodedcc.org
+2018-08-30 20:47:55,320:error:	Connecting to test.encodedcc.org
+2018-08-30 20:54:00,430:error:	Connecting to test.encodedcc.org
+2018-08-30 21:18:20,700:error:	Connecting to test.encodedcc.org
+2018-08-31 08:40:58,610:error:	Connecting to test.encodedcc.org
+2018-08-31 08:42:12,465:error:	Connecting to test.encodedcc.org
+2018-08-31 08:44:42,972:error:	Connecting to test.encodedcc.org
+2018-08-31 10:31:58,010:error:	Connecting to test.encodedcc.org
+2018-08-31 10:41:17,165:error:	Connecting to test.encodedcc.org
+2018-08-31 10:48:51,466:error:	Connecting to test.encodedcc.org
+2018-08-31 11:05:45,275:error:	Connecting to test.encodedcc.org
+2018-08-31 11:25:44,374:error:	Connecting to test.encodedcc.org
+2018-08-31 12:01:46,708:error:	Connecting to test.encodedcc.org
+2018-08-31 14:26:54,744:error:	Connecting to test.encodedcc.org
+2018-08-31 14:28:55,344:error:	Connecting to test.encodedcc.org
+2018-08-31 14:28:55,344:error:	Connecting to test.encodedcc.org
+2018-08-31 14:43:05,431:error:	Connecting to test.encodedcc.org
+2018-08-31 14:43:05,431:error:	Connecting to test.encodedcc.org
+2018-08-31 14:43:05,431:error:	Connecting to test.encodedcc.org
+2018-08-31 14:44:18,869:error:	Connecting to test.encodedcc.org
+2018-08-31 14:44:19,123:error:	Connecting to test.encodedcc.org
+2018-08-31 14:44:19,123:error:	Connecting to test.encodedcc.org
+2018-08-31 14:55:41,113:error:	Connecting to test.encodedcc.org
+2018-08-31 14:55:42,381:error:	Connecting to test.encodedcc.org
+2018-08-31 14:55:42,381:error:	Connecting to test.encodedcc.org
+2018-09-05 14:01:46,848:error:	Connecting to test.encodedcc.org
+2018-09-05 14:01:47,191:error:	Connecting to test.encodedcc.org
+2018-09-05 14:01:47,191:error:	Connecting to test.encodedcc.org
+2018-09-06 20:28:05,301:error:	Connecting to test.encodedcc.org
+2018-09-06 20:28:05,770:error:	Connecting to test.encodedcc.org
+2018-09-06 20:28:05,770:error:	Connecting to test.encodedcc.org
+2018-09-06 20:32:33,928:error:	Connecting to test.encodedcc.org
+2018-09-06 20:32:34,425:error:	Connecting to test.encodedcc.org
+2018-09-06 20:32:34,425:error:	Connecting to test.encodedcc.org
+2018-09-09 13:28:25,661:error:	Connecting to test.encodedcc.org
+2018-09-09 13:28:26,479:error:	Connecting to test.encodedcc.org
+2018-09-09 13:28:26,479:error:	Connecting to test.encodedcc.org
+2018-09-09 16:32:59,994:error:	Will not POST 'anshul-kundaje:test_alias' since it already exists with aliases '['anshul-kundaje:test_alias']'.
+2018-09-09 16:32:59,994:error:	Will not POST 'anshul-kundaje:test_alias' since it already exists with aliases '['anshul-kundaje:test_alias']'.
+2018-09-09 16:44:16,250:error:	Failed to POST atac-test:test_alias
+2018-09-09 16:44:16,250:error:	Failed to POST atac-test:test_alias
+2018-09-09 17:59:32,085:error:	Connecting to test.encodedcc.org
+2018-09-09 17:59:33,634:error:	Failed to POST atac-test:test_alias
+2018-09-09 18:06:13,313:error:	Connecting to test.encodedcc.org
+2018-09-09 18:08:41,674:error:	Connecting to test.encodedcc.org
+2018-09-09 18:09:38,153:error:	Connecting to test.encodedcc.org
+2018-09-09 18:09:39,693:error:	Failed to POST anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:10:52,539:error:	Failed to POST anshul-kundaje:quay.io/encode-dcc/atac-seq-pipeline@sha256:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:15:24,037:error:	Connecting to test.encodedcc.org
+2018-09-09 18:15:25,460:error:	Failed to POST anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:18:33,345:error:	Failed to POST anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:19:06,840:error:	Failed to POST anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-09 18:19:16,588:error:	Connecting to test.encodedcc.org
+2018-09-09 18:19:38,242:error:	Will not POST 'anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-09 18:20:33,520:error:	Will not POST 'anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 00:01:49,581:error:	Connecting to test.encodedcc.org
+2018-09-10 00:02:22,897:error:	Connecting to test.encodedcc.org
+2018-09-10 00:05:18,675:error:	Connecting to test.encodedcc.org
+2018-09-10 00:13:02,609:error:	Connecting to test.encodedcc.org
+2018-09-10 00:13:05,648:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 00:13:32,136:error:	Connecting to test.encodedcc.org
+2018-09-10 00:13:33,906:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 10:01:49,938:error:	Connecting to test.encodedcc.org
+2018-09-10 10:07:53,768:error:	Connecting to test.encodedcc.org
+2018-09-10 10:10:15,796:error:	Connecting to test.encodedcc.org
+2018-09-10 11:24:17,473:error:	Connecting to test.encodedcc.org
+2018-09-10 11:24:19,108:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:26:13,421:error:	Connecting to test.encodedcc.org
+2018-09-10 11:26:14,531:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:30:24,599:error:	Connecting to test.encodedcc.org
+2018-09-10 11:30:25,784:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:31:47,688:error:	Connecting to test.encodedcc.org
+2018-09-10 11:31:48,824:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:31:49,377:error:	Failed to POST anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398
+2018-09-10 11:40:29,135:error:	Connecting to test.encodedcc.org
+2018-09-10 11:40:30,377:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:40:31,237:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:40:57,714:error:	Connecting to test.encodedcc.org
+2018-09-10 11:40:58,855:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:40:59,647:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:45:04,405:error:	Connecting to test.encodedcc.org
+2018-09-10 11:45:05,626:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:45:25,768:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:48:18,406:error:	Connecting to test.encodedcc.org
+2018-09-10 11:48:19,510:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:48:20,330:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:55:44,604:error:	Connecting to test.encodedcc.org
+2018-09-10 11:55:45,825:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:55:46,702:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:57:10,699:error:	Connecting to test.encodedcc.org
+2018-09-10 11:57:11,839:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 11:57:12,635:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:37:45,688:error:	Connecting to test.encodedcc.org
+2018-09-10 13:37:46,863:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:37:47,689:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:43:56,586:error:	Connecting to test.encodedcc.org
+2018-09-10 13:43:57,764:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:43:58,672:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:47:06,755:error:	Connecting to test.encodedcc.org
+2018-09-10 13:47:07,877:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 13:47:08,680:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:12:15,725:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:15:50,414:error:	Connecting to test.encodedcc.org
+2018-09-10 14:15:51,660:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:15:52,494:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:19:52,330:error:	Connecting to test.encodedcc.org
+2018-09-10 14:19:53,469:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:19:54,297:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:28:02,043:error:	Connecting to test.encodedcc.org
+2018-09-10 14:28:03,210:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:28:04,103:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:42:34,153:error:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 14:44:49,157:error:	Connecting to test.encodedcc.org
+2018-09-10 14:44:50,306:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:44:51,117:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:46:23,404:error:	Connecting to test.encodedcc.org
+2018-09-10 14:46:24,636:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:46:25,425:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 14:46:26,214:error:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 15:35:32,623:error:	Connecting to test.encodedcc.org
+2018-09-10 15:35:33,915:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:35:34,838:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:35:35,436:error:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 15:39:00,478:error:	Connecting to test.encodedcc.org
+2018-09-10 15:39:49,721:error:	Connecting to test.encodedcc.org
+2018-09-10 15:39:50,851:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:39:51,787:error:	Will not POST 'anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398' since it already exists with aliases '['anshul-kundaje:atac-seq-trim-align-filter-step-run-single-rep-v1-97940d0951cf2c3df554584f18ee8e6f1ac9bd39aa39326c6a0f7110d8037398']'.
+2018-09-10 15:41:11,060:error:	Failed to POST anshul-kundaje:atac-seq-accessioning-samples/atac/eebea217-a681-4b83-bade-3abaec9c6cf5/call-filter/shard-0/glob-3bcbe4e7489c90f75e0523ac6f3a9385/ENCFF695YHX.trim.merged.nodup.bam
+2018-09-10 15:42:56,180:error:	Failed to POST anshul-kundaje:22
