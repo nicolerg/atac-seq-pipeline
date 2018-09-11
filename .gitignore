@@ -113,3 +113,9 @@ cromwell*.jar
 output_*.json
 test/*_standalone.wdl
 .DS_Store
+
+# Google Cloud Libraries
+accession_google_outputs/
+
+# encode_utils logs
+EU_Logs/

@@ -44,7 +44,7 @@ RAW_FILE = {
     "submitted_file_name": ""
 }
 
-ASSEMBLIES = ['GRCh38']
+ASSEMBLIES = ['GRCh38', 'mm10']
 
 
 class GCBackend():
@@ -262,13 +262,16 @@ class Accession(object):
                 return False
         return True
 
+    def upload_file(self):
+        pass
 
     def accession_file(self, encode_file, gs_file):
-        #local_file = self.backend.download(gs_file.filename)
-        pdb.set_trace()
+        local_file = self.backend.download(gs_file.filename)[0]
+        encode_file['submitted_file_name'] = local_file
         encode_posted_file = self.conn.post(encode_file)
+        # self.conn.upload_file(file_id=encode_posted_file.get('accession'),
+        #                       file_path=local_file)
         return encode_posted_file
-
 
     def get_or_make_step_run(self, lab_prefix, run_name, step_version, task_name):
         docker_tag = self.analysis.get_tasks(task_name)[0].docker_image.split(':')[1]
@@ -307,18 +310,14 @@ class Accession(object):
         biological_replicates = list(set(chain(*[obj['biological_replicates']
                                          for obj
                                          in encode_fastqs])))
-        filename_for_alias = file.filename.split('gs://')[-1]
+        filename_for_alias = file.filename.split('gs://')[-1].replace('/', '-')
         alignment_bam = {
             'file_format':              'bam',
             'output_type':              'alignments',
-            'file_type':                'bam',
-            'output_category':          'alignment',
-            'status':                   'released',
+            'status':                   'uploading',
             'aliases':                  ['anshul-kundaje:{}'.format(filename_for_alias)],
             'assembly':                 self.assembly,
             'submitted_file_name':      file.filename.split('gs://')[-1],
-            'biological_replicates':    biological_replicates,
-            'technical_replicates':     technical_replicates,
             'dataset':                  encode_fastqs[0].get('dataset'),
             'step_run':                 step_run.get('@id'),
             'derived_from':             derived_from,
