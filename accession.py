@@ -2,8 +2,10 @@ import json
 import tempfile
 import base64
 import pdb
+import operator
 import encode_utils as eu
 from itertools import chain
+from functools import reduce
 from encode_utils.connection import Connection
 from google.cloud import storage
 
@@ -26,23 +28,7 @@ COMMON_METADATA = {
     'award': 'U41HG007000'
 }
 
-RAW_FILE = {
-    "aliases": [""],
-    "dataset": "",
-    "file_format": "",
-    "flowcell_details": {
-      "barcode": "",
-      "flowcell": "",
-      "lane": "",
-      "machine": ""
-    },
-    "output": "",
-    "paired_end": "",
-    "platform": "",
-    "read_length": 0,
-    "replicate": "",
-    "submitted_file_name": ""
-}
+XCOR_QC_KEYS = ['PBC',]
 
 ASSEMBLIES = ['GRCh38', 'mm10']
 
@@ -81,6 +67,10 @@ class GCBackend():
     def read_file(self, file):
         blob = self.blob_from_filename(file)
         return blob.download_as_string()
+
+    # Read json file
+    def read_json(self, file):
+        return json.loads(self.read_file(file.filename).decode())
 
     # Downloads file to local filesystem
     def download(self, file):
@@ -139,7 +129,7 @@ class Analysis(object):
             if filename == file.filename:
                 if key not in file.filekeys:
                     file.filekeys.append(key)
-                if used_by_tasks not in file.used_by_tasks:
+                if used_by_tasks and used_by_tasks not in file.used_by_tasks:
                     file.used_by_tasks.append(used_by_tasks)
                 return file
         md5sum = self.backend.md5sum(filename)
@@ -185,15 +175,17 @@ class Analysis(object):
                 tasks.append(task)
         return tasks
 
-    def get_file(self, filekey=None, filename=None):
+    def get_files(self, filekey=None, filename=None):
+        files = []
         if filekey:
             for file in self.files:
                 if filekey in file.filekeys:
-                    return file
+                    files.append(file)
         if filename:
             for file in self.files:
                 if filename == file.filename:
-                    return file
+                    files.append(file)
+        return list(set(files))
 
     @property
     def raw_fastqs(self):
@@ -202,6 +194,29 @@ class Analysis(object):
             if 'fastqs' in file.filekeys and file.task is None:
                 fastqs.append(file)
         return fastqs
+
+    # Search the Analysis hirearchy up for a file matching filekey
+    # Returns generator object, access with next()
+    def search_up(self, task, task_name, filekey):
+        if task_name == task.task_name:
+            for file in task.output_files:
+                if filekey in file.filekeys:
+                    yield file
+        for task_item in map(lambda x: x.task, task.input_files):
+            if task_item:
+                yield from self.search_up(task_item, task_name, filekey)
+
+    # Search the Analysis hirearchy down for a file matching filekey
+    # Returns generator object, access with next()
+    def search_down(self, task, task_name, filekey):
+        if task_name == task.task_name:
+            for file in task.output_files:
+                if filekey in file.filekeys:
+                    yield file
+        for task_item in reduce(operator.concat, map(lambda x: x.used_by_tasks,
+                                                     task.output_files)):
+            if task_item:
+                yield from self.search_down(task_item, task_name, filekey)
 
 
 class Task(object):
@@ -224,9 +239,18 @@ class GSFile(object):
         self.filename = name
         self.filekeys = [key]
         self.task = task
-        self.used_by_tasks = [used_by_tasks]
+        self.used_by_tasks = [used_by_tasks] if used_by_tasks else []
         self.md5sum = md5sum
         self.size = size
+
+    # Depends on all other tasks and files having finished initializing
+    # Returns lisf of files
+    def derived_from(self, filekey=None):
+        if not filekey:
+            return self.task.input_files
+        else:
+            return list(filter(lambda x: filekey in x.filekeys,
+                               self.task.input_files))
 
 
 class Accession(object):
@@ -247,7 +271,6 @@ class Accession(object):
         encode_file = self.conn.search(search_param)
         if len(encode_file) > 0:
             return encode_file[0]
-        return False
 
     def raw_fastq_inputs(self, file):
         if not file.task and 'fastqs' in file.filekeys:
@@ -266,12 +289,20 @@ class Accession(object):
         pass
 
     def accession_file(self, encode_file, gs_file):
-        local_file = self.backend.download(gs_file.filename)[0]
-        encode_file['submitted_file_name'] = local_file
-        encode_posted_file = self.conn.post(encode_file)
-        # self.conn.upload_file(file_id=encode_posted_file.get('accession'),
-        #                       file_path=local_file)
-        return encode_posted_file
+        file_exists = self.file_at_portal(gs_file.filename)
+        if not file_exists:
+            local_file = self.backend.download(gs_file.filename)[0]
+            encode_file['submitted_file_name'] = local_file
+            encode_posted_file = self.conn.post(encode_file)
+            # self.conn.upload_file(file_id=encode_posted_file.get('accession'),
+            #                       file_path=local_file)
+            return encode_posted_file
+        print(file_exists)
+        return file_exists
+
+    def patch_file(self, encode_file, new_properties):
+        new_properties[self.conn.ENCID_KEY] = encode_file.get('accession')
+        self.conn.patch(new_properties)
 
     def get_or_make_step_run(self, lab_prefix, run_name, step_version, task_name):
         docker_tag = self.analysis.get_tasks(task_name)[0].docker_image.split(':')[1]
@@ -304,12 +335,6 @@ class Accession(object):
         derived_from = ['/files/{}/'.format(obj['accession'])
                         for obj
                         in encode_fastqs]
-        technical_replicates = list(set(chain(*[obj['technical_replicates']
-                                        for obj
-                                        in encode_fastqs])))
-        biological_replicates = list(set(chain(*[obj['biological_replicates']
-                                         for obj
-                                         in encode_fastqs])))
         filename_for_alias = file.filename.split('gs://')[-1].replace('/', '-')
         alignment_bam = {
             'file_format':              'bam',
@@ -330,14 +355,13 @@ class Accession(object):
     def accession_alignment_outputs(self,
                                     task_name='filter',
                                     filekey='nodup_bam'):
-        alignment_bams = []
+        accessioned_alignment_bams = []
         tasks = self.analysis.get_tasks(task_name)
         for task in tasks:
             for bam in [file
                         for file
                         in task.output_files
                         if filekey in file.filekeys]:
-                print(task_name)
                 step_run = self.get_or_make_step_run(
                     'anshul-kundaje',
                     'atac-seq-trim-align-filter-step-run-single-rep-v1',
@@ -345,5 +369,112 @@ class Accession(object):
                     task_name)
                 encode_bam_file = self.accession_file(self.make_alignment_bam(
                     bam, step_run), bam)
-                alignment_bams.append(encode_bam_file)
-        return alignment_bams
+                if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
+                                             in x['@type'],
+                                   encode_bam_file['quality_metrics'])):
+                    self.attach_flagstat_qc_to(encode_bam_file, bam)
+                if not list(filter(lambda x: 'ComplexityXcorrQualityMetric'
+                                             in x['@type'],
+                                   encode_bam_file['quality_metrics'])):
+                    self.attach_cross_correlation_qc_to(encode_bam_file, bam)
+                accessioned_alignment_bams.append(encode_bam_file)
+        return accessioned_alignment_bams
+
+    def file_has_qc(self, bam, qc):
+        for item in bam['quality_metrics']:
+            if item['@type'][0] == qc['@type'][0]:
+                return True
+        return False
+
+    def get_attachment(self, gs_file, mime_type):
+        contents = self.backend.read_file(gs_file.filename)
+        obj = {
+            'type': mime_type,
+            'download': gs_file.filename.split('/')[-1],
+            'href': 'data:{};charset=,{}'.format(mime_type,
+                                                 contents)
+        }
+        return obj
+
+    def attach_flagstat_qc_to(self, encode_bam_file, gs_file):
+        qc = self.backend.read_json(self.analysis.get_files('qc_json')[0])
+        flagstat_qc = qc['nodup_flagstat_qc'][int(encode_bam_file.get('biological_replicates')[0]) - 1]
+        for key, value in flagstat_qc.items():
+            if '_pct' in key:
+                flagstat_qc[key] = '{}%'.format(value)
+        flagstat_qc.update({
+            'step_run':             encode_bam_file.get('step_run').get('@id'),
+            'quality_metric_of':    [encode_bam_file.get('@id')],
+            'status':               'released'})
+        flagstat_qc.update(COMMON_METADATA)
+        flagstat_qc[Connection.PROFILE_KEY] = 'samtools-flagstats-quality-metric'
+        posted_qc = self.conn.post(flagstat_qc, require_aliases=False)
+        return posted_qc
+
+
+    def attach_cross_correlation_qc_to(self, encode_bam_file, gs_file):
+        qc = self.backend.read_json(self.analysis.get_files('qc_json')[0])
+        plot_pdf = next(self.analysis.search_down(gs_file.task,
+                                                  'xcor',
+                                                  'plot_pdf'))
+        read_length_file = next(self.analysis.search_up(gs_file.task,
+                                                        'bowtie2',
+                                                        'read_len_log'))
+        read_length = int(self.backend.read_file(read_length_file.filename).decode())
+        xcor_qc = qc['xcor_score'][int(encode_bam_file.get('biological_replicates')[0]) - 1]
+        pbc_qc = qc['pbc_qc'][int(encode_bam_file.get('biological_replicates')[0]) - 1]
+        xcor_object = {
+            'NRF':                  pbc_qc['NRF'],
+            'PBC1':                 pbc_qc['PBC1'],
+            'PBC2':                 pbc_qc['PBC2'],
+            'NSC':                  xcor_qc['NSC'],
+            'RSC':                  xcor_qc['RSC'],
+            'sample size':          xcor_qc['num_reads'],
+            "fragment length":      xcor_qc['est_frag_len'],
+            "quality_metric_of":    [encode_bam_file.get('@id')],
+            "step_run":             encode_bam_file.get('step_run').get('@id'),
+            "paired-end":           self.analysis.metadata['inputs']['atac.paired_end'],
+            "read length":          read_length,
+            "status":               "released",
+        }
+        # "cross_correlation_plot": self.get_attachment(plot_pdf, 'application/pdf')
+
+        xcor_object.update(COMMON_METADATA)
+        xcor_object[Connection.PROFILE_KEY] = 'complexity-xcorr-quality-metrics'
+        posted_qc = self.conn.post(xcor_object, require_aliases=False)
+        return posted_qc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
