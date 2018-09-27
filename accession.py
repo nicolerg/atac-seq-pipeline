@@ -265,7 +265,11 @@ class Accession(object):
     def accession_fastqs(self):
         pass
 
+    def wait_for_portal(self):
+        pass
+
     def file_at_portal(self, file):
+        self.wait_for_portal()
         md5sum = self.backend.md5sum(file)
         search_param = [('md5sum', md5sum), ('type', 'File')]
         encode_file = self.conn.search(search_param)
@@ -285,8 +289,6 @@ class Accession(object):
                 return False
         return True
 
-    def upload_file(self):
-        pass
 
     def accession_file(self, encode_file, gs_file):
         file_exists = self.file_at_portal(gs_file.filename)
@@ -312,12 +314,6 @@ class Accession(object):
         payload[Connection.PROFILE_KEY] = 'analysis_step_runs'
         return self.conn.post(payload)
 
-    def accession_qc_objects(self):
-        pass
-
-    def make_qc_object(self):
-        pass
-
     @property
     def assembly(self):
         assembly = [reference
@@ -328,6 +324,35 @@ class Accession(object):
                         'genome', {}).get('ref_fa', '')]
         return assembly[0] if len(assembly) > 0 else ''
 
+    @property
+    def lab_pi(self):
+        return COMMON_METADATA['lab'].split('/labs/')[1].split('/')[0]
+
+    def file_from_template(self,
+                           file,
+                           file_format,
+                           output_type,
+                           step_run,
+                           derived_from,
+                           dataset):
+        file_name = file.filename.split('gs://')[-1].replace('/', '-')
+        obj = {
+            'status':               'uploading',
+            'aliases':              ['{}:{}'.format(self.lab_pi, filename)],
+            'file_format':          file_format,
+            'output_type':          output_type,
+            'assembly':             self.assembly,
+            'submitted_file_name':  file.filename.split('gs://')[-1],
+            'dataset':              dataset,
+            'step_run':             step_run.get('@id'),
+            'derived_from':         derived_from,
+            'file_size':            file.size,
+            'md5sum':               file.md5sum
+        }
+        obj[Connection.PROFILE_KEY] = 'file'
+        obj.update(COMMON_METADATA)
+        return obj
+
     def make_alignment_bam(self, file, step_run):
         encode_fastqs = [self.file_at_portal(fastq.filename)
                          for fastq
@@ -335,22 +360,25 @@ class Accession(object):
         derived_from = ['/files/{}/'.format(obj['accession'])
                         for obj
                         in encode_fastqs]
-        filename_for_alias = file.filename.split('gs://')[-1].replace('/', '-')
-        alignment_bam = {
-            'file_format':              'bam',
-            'output_type':              'alignments',
-            'status':                   'uploading',
-            'aliases':                  ['anshul-kundaje:{}'.format(filename_for_alias)],
-            'assembly':                 self.assembly,
-            'submitted_file_name':      file.filename.split('gs://')[-1],
-            'dataset':                  encode_fastqs[0].get('dataset'),
-            'step_run':                 step_run.get('@id'),
-            'derived_from':             derived_from,
-            'file_size':                file.size,
-            'md5sum':                   file.md5sum}
-        alignment_bam[Connection.PROFILE_KEY] = 'file'
-        alignment_bam.update(COMMON_METADATA)
-        return alignment_bam
+        return self.file_from_template(file,
+                                       'bam',
+                                       'alignments',
+                                       step_run,
+                                       derived_from,
+                                       encode_fastqs[0].get('dataset'))
+
+    def make_signal_bigwig(self, file, step_run, output_type):
+        derived_from_bam = next(self.analysis.search_up(file.task,
+                                                        'filter',
+                                                        'nodup_bam'))
+        encode_bam = self.file_at_portal(derived_from_bam.filename)
+        derived_from = ['/files/{}'.format(encode_bam['accession'])]
+        return self.file_from_template(file,
+                                       'bigwig',
+                                       output_type,
+                                       step_run,
+                                       derived_from,
+                                       encode_bam.get('dataset'))
 
     def accession_alignment_outputs(self,
                                     task_name='filter',
@@ -364,8 +392,8 @@ class Accession(object):
                         if filekey in file.filekeys]:
                 step_run = self.get_or_make_step_run(
                     'anshul-kundaje',
-                    'atac-seq-trim-align-filter-step-run-single-rep-v1',
-                    'anshul-kundaje:atac-seq-trim-align-filter-step-version-single-rep-v1',
+                    'atac-seq-trim-align-filter-step-run-v1',
+                    'anshul-kundaje:atac-seq-trim-align-filter-step-version-v1',
                     task_name)
                 encode_bam_file = self.accession_file(self.make_alignment_bam(
                     bam, step_run), bam)
@@ -411,7 +439,6 @@ class Accession(object):
         posted_qc = self.conn.post(flagstat_qc, require_aliases=False)
         return posted_qc
 
-
     def attach_cross_correlation_qc_to(self, encode_bam_file, gs_file):
         qc = self.backend.read_json(self.analysis.get_files('qc_json')[0])
         plot_pdf = next(self.analysis.search_down(gs_file.task,
@@ -443,6 +470,28 @@ class Accession(object):
         xcor_object[Connection.PROFILE_KEY] = 'complexity-xcorr-quality-metrics'
         posted_qc = self.conn.post(xcor_object, require_aliases=False)
         return posted_qc
+
+    def accession_signal_outputs(self, task_name='macs2'):
+        file_to_output = {
+            'sig_fc':   'fold change over control',
+            'sig_pval': 'signal p-value'
+        }
+        accessioned_signal_bigwigs = []
+        tasks = self.analysis.get_tasks(task_name)
+        for task in tasks:
+            step_run = self.get_or_make_step_run(
+                'anshul-kundaje',
+                'atac-seq-signal-generation-step-run-v1',
+                'anshul-kundaje:atac-seq-signal-generation-step-version-v1',
+                task_name)
+            for bigwig in [file
+                           for file
+                           in task.output_files
+                           if filekey in file.filekeys]:
+                encode_signal_file = self.accession_file(self.make_signal_fold(
+                    bigwig, step_run), bigwig)
+                accessioned_signal_bigwigs.append(encode_signal_file)
+        return accessioned_signal_bigwigs
 
 
 
