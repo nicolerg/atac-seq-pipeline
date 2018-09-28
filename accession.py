@@ -196,13 +196,18 @@ class Analysis(object):
         return fastqs
 
     # Search the Analysis hirearchy up for a file matching filekey
-    # Returns generator object, access with next()
-    def search_up(self, task, task_name, filekey):
+    # Returns generator object, access with next() or list()
+    def search_up(self, task, task_name, filekey, inputs=False):
         if task_name == task.task_name:
-            for file in task.output_files:
-                if filekey in file.filekeys:
-                    yield file
-        for task_item in map(lambda x: x.task, task.input_files):
+            if inputs:
+                for file in task.input_files:
+                    if filekey in file.filekeys:
+                        yield file
+            else:
+                for file in task.output_files:
+                    if filekey in file.filekeys:
+                        yield file
+        for task_item in set(map(lambda x: x.task, task.input_files)):
             if task_item:
                 yield from self.search_up(task_item, task_name, filekey)
 
@@ -213,8 +218,9 @@ class Analysis(object):
             for file in task.output_files:
                 if filekey in file.filekeys:
                     yield file
-        for task_item in reduce(operator.concat, map(lambda x: x.used_by_tasks,
-                                                     task.output_files)):
+        for task_item in set(reduce(operator.concat,
+                                    map(lambda x: x.used_by_tasks,
+                                        task.output_files))):
             if task_item:
                 yield from self.search_down(task_item, task_name, filekey)
 
@@ -261,6 +267,7 @@ class Accession(object):
         self.analysis = Analysis(metadata_json, bucket_name)
         self.backend = self.analysis.backend
         self.conn = Connection(server)
+        self.new_files
 
     def accession_fastqs(self):
         pass
@@ -298,8 +305,8 @@ class Accession(object):
             encode_posted_file = self.conn.post(encode_file)
             # self.conn.upload_file(file_id=encode_posted_file.get('accession'),
             #                       file_path=local_file)
+            self.new_files.append(encode_posted_file)
             return encode_posted_file
-        print(file_exists)
         return file_exists
 
     def patch_file(self, encode_file, new_properties):
@@ -313,6 +320,7 @@ class Accession(object):
                    'analysis_step_version': step_version}
         payload[Connection.PROFILE_KEY] = 'analysis_step_runs'
         return self.conn.post(payload)
+
 
     @property
     def assembly(self):
@@ -338,7 +346,7 @@ class Accession(object):
         file_name = file.filename.split('gs://')[-1].replace('/', '-')
         obj = {
             'status':               'uploading',
-            'aliases':              ['{}:{}'.format(self.lab_pi, filename)],
+            'aliases':              ['{}:{}'.format(self.lab_pi, file_name)],
             'file_format':          file_format,
             'output_type':          output_type,
             'assembly':             self.assembly,
@@ -352,6 +360,16 @@ class Accession(object):
         obj[Connection.PROFILE_KEY] = 'file'
         obj.update(COMMON_METADATA)
         return obj
+
+    def get_derived_from(self, file, task_name, filekey):
+        if encode_bam:
+            derived_from = ['/files/{}'.format(encode_bam['accession'])]
+        else:
+            derived_from = ['/files/{}'.format(new_file.get('accession'))
+                            for new_file
+                            in self.new_files
+                            if new_file.get('md5sum') == derived_from_bam.md5sum]
+        return derived_from
 
     def make_alignment_bam(self, file, step_run):
         encode_fastqs = [self.file_at_portal(fastq.filename)
@@ -372,9 +390,35 @@ class Accession(object):
                                                         'filter',
                                                         'nodup_bam'))
         encode_bam = self.file_at_portal(derived_from_bam.filename)
+        if encode_bam:
+            derived_from = ['/files/{}'.format(encode_bam['accession'])]
+        else:
+            derived_from = ['/files/{}'.format(new_file.get('accession'))
+                            for new_file
+                            in self.new_files
+                            if new_file.get('md5sum') == derived_from_bam.md5sum]
         derived_from = ['/files/{}'.format(encode_bam['accession'])]
         return self.file_from_template(file,
-                                       'bigwig',
+                                       'bigWig',
+                                       output_type,
+                                       step_run,
+                                       derived_from,
+                                       encode_bam.get('dataset'))
+
+    def make_peak_bed(self, file, step_run, output_type):
+        derived_from_bam = next(self.analysis.search_up(file.task,
+                                                        'filter',
+                                                        'nodup_bam'))
+        encode_bam = self.file_at_portal(derived_from_bam.filename)
+        if encode_bam:
+            derived_from = ['/files/{}'.format(encode_bam['accession'])]
+        else:
+            derived_from = ['/files/{}'.format(new_file.get('accession'))
+                            for new_file
+                            in self.new_files
+                            if new_file.get('md5sum') == derived_from_bam.md5sum]
+        return self.file_from_template(file
+                                       'bed',
                                        output_type,
                                        step_run,
                                        derived_from,
@@ -480,18 +524,42 @@ class Accession(object):
         tasks = self.analysis.get_tasks(task_name)
         for task in tasks:
             step_run = self.get_or_make_step_run(
-                'anshul-kundaje',
+                self.lab_pi,
                 'atac-seq-signal-generation-step-run-v1',
-                'anshul-kundaje:atac-seq-signal-generation-step-version-v1',
+                '{}:atac-seq-signal-generation-step-version-v1'.format(self.lab_pi),
                 task_name)
-            for bigwig in [file
-                           for file
-                           in task.output_files
-                           if filekey in file.filekeys]:
-                encode_signal_file = self.accession_file(self.make_signal_fold(
-                    bigwig, step_run), bigwig)
-                accessioned_signal_bigwigs.append(encode_signal_file)
+            for filekey, output_type in file_to_output.items():
+                for bigwig in [file
+                               for file
+                               in task.output_files
+                               if filekey in file.filekeys]:
+                    encode_signal_file = self.accession_file(self.make_signal_bigwig(
+                        bigwig, step_run, output_type), bigwig)
+                    accessioned_signal_bigwigs.append(encode_signal_file)
         return accessioned_signal_bigwigs
+
+    def accession_raw_peaks(self, task_name='macs2'):
+        file_to_output = {
+            'bfilt_npeak':  'raw peaks'
+        }
+        accessioned_raw_peaks = []
+        for task in self.analysis.get_tasks(task_name):
+            step_run = self.get_or_make_step_run(
+                self.lab_pi,
+                'atac-seq-peaks-filter-step-run-v1',
+                '{}:atac-seq-peaks-filter-step-version-v1'.format(self.lab_pi),
+                task_name)
+            for filekey, output_type in file_to_output.items():
+                for bed in [file
+                            for file
+                            in task.output_files
+                            if filekey in file.filekeys]:
+                    encode_bed_file = self.accession_file(self.make_peak_bed(
+                        bed, step_run, output_type), bed)
+                    accessioned_raw_peaks.append(encode_bed_file)
+        return accessioned_raw_peaks
+
+    def 
 
 
 
