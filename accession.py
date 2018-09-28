@@ -198,6 +198,7 @@ class Analysis(object):
     # Search the Analysis hirearchy up for a file matching filekey
     # Returns generator object, access with next() or list()
     def search_up(self, task, task_name, filekey, inputs=False):
+        print('inputs ', inputs)
         if task_name == task.task_name:
             if inputs:
                 for file in task.input_files:
@@ -209,7 +210,7 @@ class Analysis(object):
                         yield file
         for task_item in set(map(lambda x: x.task, task.input_files)):
             if task_item:
-                yield from self.search_up(task_item, task_name, filekey)
+                yield from self.search_up(task_item, task_name, filekey, inputs)
 
     # Search the Analysis hirearchy down for a file matching filekey
     # Returns generator object, access with next()
@@ -267,7 +268,7 @@ class Accession(object):
         self.analysis = Analysis(metadata_json, bucket_name)
         self.backend = self.analysis.backend
         self.conn = Connection(server)
-        self.new_files
+        self.new_files = []
 
     def accession_fastqs(self):
         pass
@@ -281,7 +282,7 @@ class Accession(object):
         search_param = [('md5sum', md5sum), ('type', 'File')]
         encode_file = self.conn.search(search_param)
         if len(encode_file) > 0:
-            return encode_file[0]
+            return self.conn.get(encode_file[0].get('accession'))
 
     def raw_fastq_inputs(self, file):
         if not file.task and 'fastqs' in file.filekeys:
@@ -365,7 +366,7 @@ class Accession(object):
         return obj
 
     # Returns list of accession ids of files on portal or recently accessioned
-    def get_derived_from(self, file, task_name, filekey, intputs=False):
+    def get_derived_from(self, file, task_name, filekey, inputs=False):
         derived_from_files = list(self.analysis.search_up(file.task,
                                                           task_name,
                                                           filekey,
@@ -380,7 +381,7 @@ class Accession(object):
                 if gs_file.md5sum == encode_file.get('md5sum'):
                     derived_from_accession_ids.append(encode_file.get('accession'))
         if len(derived_from_accession_ids) != len(derived_from_files):
-            raise Exeption('Missing derived_from files on the portal')
+            raise Exception('Missing derived_from files on the portal')
         return ['/files/{}/'.format(accession_id)
                 for accession_id in derived_from_accession_ids]
 
@@ -392,7 +393,7 @@ class Accession(object):
                                              derived_from_task,
                                              derived_from_filekey,
                                              inputs)
-        return self.file_from_template(file
+        return self.file_from_template(file,
                                        file_format,
                                        output_type,
                                        step_run,
@@ -479,6 +480,7 @@ class Accession(object):
                             for file
                             in task.output_files
                             if filekey in file.filekeys]:
+                    print(bam.filename)
                     file_obj = self.make_file_obj(bam,
                                                   'bam',
                                                   output_type,
@@ -486,8 +488,7 @@ class Accession(object):
                                                   'trim_adapter',
                                                   'fastqs',
                                                   inputs=True)
-                    encode_file = self.accession_file(self.make_alignment_bam(
-                        bam, step_run), bam)
+                    encode_file = self.accession_file(file_obj, bam)
                     if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
                                                  in x['@type'],
                                        encode_file['quality_metrics'])):
@@ -544,7 +545,7 @@ class Accession(object):
                             in task.output_files
                             if filekey in file.filekeys]:
                     file_obj = self.make_file_obj(bed,
-                                                  'bed'
+                                                  'bed',
                                                   output_type,
                                                   step_run,
                                                   'filter'
@@ -555,7 +556,7 @@ class Accession(object):
 
     def accession_bigbed_raw_peaks(self, task_name='macs2'):
         file_to_output = {
-            'bfilt_npeak_bb' = 'raw peaks'
+            'bfilt_npeak_bb':   'raw peaks'
         }
         step_run = self.get_or_make_step_run(
             'atac-seq-filtered-peaks-to-bigbed-step-run-v1',
