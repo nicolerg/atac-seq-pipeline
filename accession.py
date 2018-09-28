@@ -198,7 +198,6 @@ class Analysis(object):
     # Search the Analysis hirearchy up for a file matching filekey
     # Returns generator object, access with next() or list()
     def search_up(self, task, task_name, filekey, inputs=False):
-        print('inputs ', inputs)
         if task_name == task.task_name:
             if inputs:
                 for file in task.input_files:
@@ -361,16 +360,24 @@ class Accession(object):
             'file_size':            file.size,
             'md5sum':               file.md5sum
         }
+        if (file_format in ['bed', 'bigBed']
+                and output_type
+                in ['filtered peaks',
+                    'conservative idr thresholded peaks',
+                    'optimal idr thresholded peaks',
+                    'conservative replicated peaks',
+                    'replicated peaks']):
+            obj['file_format_type'] = 'narrowPeak'
         obj[Connection.PROFILE_KEY] = 'file'
         obj.update(COMMON_METADATA)
         return obj
 
     # Returns list of accession ids of files on portal or recently accessioned
     def get_derived_from(self, file, task_name, filekey, inputs=False):
-        derived_from_files = list(self.analysis.search_up(file.task,
-                                                          task_name,
-                                                          filekey,
-                                                          inputs))
+        derived_from_files = list(set(list(self.analysis.search_up(file.task,
+                                                                   task_name,
+                                                                   filekey,
+                                                                   inputs))))
         encode_files = [self.file_at_portal(gs_file.filename)
                         for gs_file
                         in derived_from_files]
@@ -480,7 +487,6 @@ class Accession(object):
                             for file
                             in task.output_files
                             if filekey in file.filekeys]:
-                    print(bam.filename)
                     file_obj = self.make_file_obj(bam,
                                                   'bam',
                                                   output_type,
@@ -530,7 +536,7 @@ class Accession(object):
 
     def accession_raw_peaks(self, task_name='macs2'):
         file_to_output = {
-            'bfilt_npeak':  'raw peaks'
+            'bfilt_npeak':  'filtered peaks'
         }
         step_run = self.get_or_make_step_run(
             self.lab_pi,
@@ -548,17 +554,18 @@ class Accession(object):
                                                   'bed',
                                                   output_type,
                                                   step_run,
-                                                  'filter'
+                                                  'filter',
                                                   'nodup_bam')
                     encode_file = self.accession_file(file_obj, bed)
                     accessioned_raw_peaks.append(encode_file)
         return accessioned_raw_peaks
 
-    def accession_bigbed_raw_peaks(self, task_name='macs2'):
+    def accession_bigbed_conversion_raw_peaks(self, task_name='macs2'):
         file_to_output = {
-            'bfilt_npeak_bb':   'raw peaks'
+            'bfilt_npeak_bb':   'filtered peaks'
         }
         step_run = self.get_or_make_step_run(
+            self.lab_pi,
             'atac-seq-filtered-peaks-to-bigbed-step-run-v1',
             '{}:atac-seq-filtered-peaks-to-bigbed-step-version-v1'.format(self.lab_pi),
             task_name)
@@ -578,6 +585,61 @@ class Accession(object):
                     encode_file = self.accession_file(file_obj, bigbed)
                     accessioned_bb_raw_peaks.append(encode_file)
         return accessioned_bb_raw_peaks
+
+    def accession_idr_peaks(self, task_name='reproducibility_idr'):
+        file_to_output = {
+            'optimal_peak':         'optimal idr thresholded peaks',
+            'conservative_peak':    'conservative idr thresholded peaks'
+        }
+        step_run = self.get_or_make_step_run(
+            self.lab_pi,
+            'atac-seq-idr-step-run-v1',
+            '{}:atac-seq-idr-step-version-v1'.format(self.lab_pi),
+            task_name)
+        accessioned_idr_peaks = []
+        for task in self.analysis.get_tasks(task_name):
+            for filekey, output_type in file_to_output.items():
+                for bed in [file
+                            for file
+                            in task.output_files
+                            if filekey in file.filekeys]:
+                    file_obj = self.make_file_obj(bed,
+                                                  'bed',
+                                                  output_type,
+                                                  step_run,
+                                                  'macs2',
+                                                  'bfilt_npeak')
+                    encode_file = self.accession_file(file_obj, bed)
+                    accessioned_idr_peaks.append(encode_file)
+        return accessioned_idr_peaks
+
+
+    def accession_overlap_peaks(self, task_name='reproducibility_overlap'):
+            file_to_output = {
+                'optimal_peak':         'replicated peaks',
+                'conservative_peak':    'conservative replicated peaks'
+            }
+            step_run = self.get_or_make_step_run(
+                self.lab_pi,
+                'atac-seq-overlap-step-run-v1',
+                '{}:atac-seq-overlap-step-version-v1'.format(self.lab_pi),
+                task_name)
+            accessioned_idr_peaks = []
+            for task in self.analysis.get_tasks(task_name):
+                for filekey, output_type in file_to_output.items():
+                    for bed in [file
+                                for file
+                                in task.output_files
+                                if filekey in file.filekeys]:
+                        file_obj = self.make_file_obj(bed,
+                                                      'bed',
+                                                      output_type,
+                                                      step_run,
+                                                      'macs2',
+                                                      'bfilt_npeak')
+                        encode_file = self.accession_file(file_obj, bed)
+                        accessioned_idr_peaks.append(encode_file)
+            return accessioned_idr_peaks
 
 
 

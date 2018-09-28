@@ -119,4 +119,4 @@ accession_google_outputs/
 
 # encode_utils logs
 EU_Logs/
-*.ipynb
+.ipynb
