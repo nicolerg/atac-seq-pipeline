@@ -296,7 +296,6 @@ class Accession(object):
                 return False
         return True
 
-
     def accession_file(self, encode_file, gs_file):
         file_exists = self.file_at_portal(gs_file.filename)
         if not file_exists:
@@ -336,6 +335,10 @@ class Accession(object):
     def lab_pi(self):
         return COMMON_METADATA['lab'].split('/labs/')[1].split('/')[0]
 
+    @property
+    def dataset(self):
+        return '/experiments/{}/'.format(self.accession_id)
+
     def file_from_template(self,
                            file,
                            file_format,
@@ -361,112 +364,40 @@ class Accession(object):
         obj.update(COMMON_METADATA)
         return obj
 
-    def get_derived_from(self, file, task_name, filekey):
-        if encode_bam:
-            derived_from = ['/files/{}'.format(encode_bam['accession'])]
-        else:
-            derived_from = ['/files/{}'.format(new_file.get('accession'))
-                            for new_file
-                            in self.new_files
-                            if new_file.get('md5sum') == derived_from_bam.md5sum]
-        return derived_from
+    # Returns list of accession ids of files on portal or recently accessioned
+    def get_derived_from(self, file, task_name, filekey, intputs=False):
+        derived_from_files = list(self.analysis.search_up(file.task,
+                                                          task_name,
+                                                          filekey,
+                                                          inputs))
+        encode_files = [self.file_at_portal(gs_file.filename)
+                        for gs_file
+                        in derived_from_files]
+        accessioned_files = encode_files + self.new_files
+        derived_from_accession_ids = []
+        for gs_file in derived_from_files:
+            for encode_file in accessioned_files:
+                if gs_file.md5sum == encode_file.get('md5sum'):
+                    derived_from_accession_ids.append(encode_file.get('accession'))
+        if len(derived_from_accession_ids) != len(derived_from_files):
+            raise Exeption('Missing derived_from files on the portal')
+        return ['/files/{}/'.format(accession_id)
+                for accession_id in derived_from_accession_ids]
 
-    def make_alignment_bam(self, file, step_run):
-        encode_fastqs = [self.file_at_portal(fastq.filename)
-                         for fastq
-                         in set(list(self.raw_fastq_inputs(file)))]
-        derived_from = ['/files/{}/'.format(obj['accession'])
-                        for obj
-                        in encode_fastqs]
-        return self.file_from_template(file,
-                                       'bam',
-                                       'alignments',
-                                       step_run,
-                                       derived_from,
-                                       encode_fastqs[0].get('dataset'))
-
-    def make_signal_bigwig(self, file, step_run, output_type):
-        derived_from_bam = next(self.analysis.search_up(file.task,
-                                                        'filter',
-                                                        'nodup_bam'))
-        encode_bam = self.file_at_portal(derived_from_bam.filename)
-        if encode_bam:
-            derived_from = ['/files/{}'.format(encode_bam['accession'])]
-        else:
-            derived_from = ['/files/{}'.format(new_file.get('accession'))
-                            for new_file
-                            in self.new_files
-                            if new_file.get('md5sum') == derived_from_bam.md5sum]
-        derived_from = ['/files/{}'.format(encode_bam['accession'])]
-        return self.file_from_template(file,
-                                       'bigWig',
-                                       output_type,
-                                       step_run,
-                                       derived_from,
-                                       encode_bam.get('dataset'))
-
-    def make_peak_bed(self, file, step_run, output_type):
-        derived_from_bam = next(self.analysis.search_up(file.task,
-                                                        'filter',
-                                                        'nodup_bam'))
-        encode_bam = self.file_at_portal(derived_from_bam.filename)
-        if encode_bam:
-            derived_from = ['/files/{}'.format(encode_bam['accession'])]
-        else:
-            derived_from = ['/files/{}'.format(new_file.get('accession'))
-                            for new_file
-                            in self.new_files
-                            if new_file.get('md5sum') == derived_from_bam.md5sum]
+    # File object to be accessioned
+    # inputs=True will search for input fastqs in derived_from
+    def make_file_obj(self, file, file_format, output_type, step_run,
+                      derived_from_task, derived_from_filekey, inputs=False):
+        derived_from = self.get_derived_from(file,
+                                             derived_from_task,
+                                             derived_from_filekey,
+                                             inputs)
         return self.file_from_template(file
-                                       'bed',
+                                       file_format,
                                        output_type,
                                        step_run,
                                        derived_from,
-                                       encode_bam.get('dataset'))
-
-    def accession_alignment_outputs(self,
-                                    task_name='filter',
-                                    filekey='nodup_bam'):
-        accessioned_alignment_bams = []
-        tasks = self.analysis.get_tasks(task_name)
-        for task in tasks:
-            for bam in [file
-                        for file
-                        in task.output_files
-                        if filekey in file.filekeys]:
-                step_run = self.get_or_make_step_run(
-                    'anshul-kundaje',
-                    'atac-seq-trim-align-filter-step-run-v1',
-                    'anshul-kundaje:atac-seq-trim-align-filter-step-version-v1',
-                    task_name)
-                encode_bam_file = self.accession_file(self.make_alignment_bam(
-                    bam, step_run), bam)
-                if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
-                                             in x['@type'],
-                                   encode_bam_file['quality_metrics'])):
-                    self.attach_flagstat_qc_to(encode_bam_file, bam)
-                if not list(filter(lambda x: 'ComplexityXcorrQualityMetric'
-                                             in x['@type'],
-                                   encode_bam_file['quality_metrics'])):
-                    self.attach_cross_correlation_qc_to(encode_bam_file, bam)
-                accessioned_alignment_bams.append(encode_bam_file)
-        return accessioned_alignment_bams
-
-    def file_has_qc(self, bam, qc):
-        for item in bam['quality_metrics']:
-            if item['@type'][0] == qc['@type'][0]:
-                return True
-        return False
-
-    def get_attachment(self, gs_file, mime_type):
-        contents = self.backend.read_file(gs_file.filename)
-        obj = {
-            'type': mime_type,
-            'download': gs_file.filename.split('/')[-1],
-            'href': 'data:{};charset=,{}'.format(mime_type,
-                                                 contents)
-        }
-        return obj
+                                       self.dataset)
 
     def attach_flagstat_qc_to(self, encode_bam_file, gs_file):
         qc = self.backend.read_json(self.analysis.get_files('qc_json')[0])
@@ -515,6 +446,58 @@ class Accession(object):
         posted_qc = self.conn.post(xcor_object, require_aliases=False)
         return posted_qc
 
+    def file_has_qc(self, bam, qc):
+        for item in bam['quality_metrics']:
+            if item['@type'][0] == qc['@type'][0]:
+                return True
+        return False
+
+    def get_attachment(self, gs_file, mime_type):
+        contents = self.backend.read_file(gs_file.filename)
+        obj = {
+            'type': mime_type,
+            'download': gs_file.filename.split('/')[-1],
+            'href': 'data:{};charset=,{}'.format(mime_type,
+                                                 contents)
+        }
+        return obj
+
+    def accession_alignment_outputs(self, task_name='filter'):
+        file_to_output = {
+            'nodup_bam': 'alignments'
+        }
+        accessioned_alignment_bams = []
+        tasks = self.analysis.get_tasks(task_name)
+        for task in tasks:
+            step_run = self.get_or_make_step_run(
+                self.lab_pi,
+                'atac-seq-trim-align-filter-step-run-v1',
+                '{}:atac-seq-trim-align-filter-step-version-v1'.format(self.lab_pi),
+                task_name)
+            for bam in [file
+                        for file
+                        in task.output_files
+                        if filekey in file.filekeys]:
+                file_obj = self.make_file_obj(bam,
+                                              'bam',
+                                              output_type,
+                                              step_run,
+                                              'trim_adapter',
+                                              'fastqs',
+                                              inputs=True)
+                encode_bam_file = self.accession_file(self.make_alignment_bam(
+                    bam, step_run), bam)
+                if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
+                                             in x['@type'],
+                                   encode_bam_file['quality_metrics'])):
+                    self.attach_flagstat_qc_to(encode_bam_file, bam)
+                if not list(filter(lambda x: 'ComplexityXcorrQualityMetric'
+                                             in x['@type'],
+                                   encode_bam_file['quality_metrics'])):
+                    self.attach_cross_correlation_qc_to(encode_bam_file, bam)
+                accessioned_alignment_bams.append(encode_bam_file)
+        return accessioned_alignment_bams
+
     def accession_signal_outputs(self, task_name='macs2'):
         file_to_output = {
             'sig_fc':   'fold change over control',
@@ -533,8 +516,13 @@ class Accession(object):
                                for file
                                in task.output_files
                                if filekey in file.filekeys]:
-                    encode_signal_file = self.accession_file(self.make_signal_bigwig(
-                        bigwig, step_run, output_type), bigwig)
+                    file_obj = self.make_file_obj(bigwig,
+                                                  'bigWig',
+                                                  output_type,
+                                                  step_run,
+                                                  'filter',
+                                                  'nodup_bam')
+                    encode_signal_file = self.accession_file(file_obj, bigwig)
                     accessioned_signal_bigwigs.append(encode_signal_file)
         return accessioned_signal_bigwigs
 
@@ -554,12 +542,15 @@ class Accession(object):
                             for file
                             in task.output_files
                             if filekey in file.filekeys]:
-                    encode_bed_file = self.accession_file(self.make_peak_bed(
-                        bed, step_run, output_type), bed)
+                    file_obj = self.make_file_obj(bed,
+                                                  'bed'
+                                                  output_type,
+                                                  step_run,
+                                                  'filter'
+                                                  'nodup_bam')
+                    encode_bed_file = self.accession_file(file_obj, bed)
                     accessioned_raw_peaks.append(encode_bed_file)
         return accessioned_raw_peaks
-
-    def 
 
 
 
