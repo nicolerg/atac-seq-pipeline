@@ -466,36 +466,37 @@ class Accession(object):
         file_to_output = {
             'nodup_bam': 'alignments'
         }
+        step_run = self.get_or_make_step_run(
+            self.lab_pi,
+            'atac-seq-trim-align-filter-step-run-v1',
+            '{}:atac-seq-trim-align-filter-step-version-v1'.format(self.lab_pi),
+            task_name)
         accessioned_alignment_bams = []
         tasks = self.analysis.get_tasks(task_name)
         for task in tasks:
-            step_run = self.get_or_make_step_run(
-                self.lab_pi,
-                'atac-seq-trim-align-filter-step-run-v1',
-                '{}:atac-seq-trim-align-filter-step-version-v1'.format(self.lab_pi),
-                task_name)
-            for bam in [file
-                        for file
-                        in task.output_files
-                        if filekey in file.filekeys]:
-                file_obj = self.make_file_obj(bam,
-                                              'bam',
-                                              output_type,
-                                              step_run,
-                                              'trim_adapter',
-                                              'fastqs',
-                                              inputs=True)
-                encode_bam_file = self.accession_file(self.make_alignment_bam(
-                    bam, step_run), bam)
-                if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
-                                             in x['@type'],
-                                   encode_bam_file['quality_metrics'])):
-                    self.attach_flagstat_qc_to(encode_bam_file, bam)
-                if not list(filter(lambda x: 'ComplexityXcorrQualityMetric'
-                                             in x['@type'],
-                                   encode_bam_file['quality_metrics'])):
-                    self.attach_cross_correlation_qc_to(encode_bam_file, bam)
-                accessioned_alignment_bams.append(encode_bam_file)
+            for filekey, output_type in file_to_output.items():
+                for bam in [file
+                            for file
+                            in task.output_files
+                            if filekey in file.filekeys]:
+                    file_obj = self.make_file_obj(bam,
+                                                  'bam',
+                                                  output_type,
+                                                  step_run,
+                                                  'trim_adapter',
+                                                  'fastqs',
+                                                  inputs=True)
+                    encode_file = self.accession_file(self.make_alignment_bam(
+                        bam, step_run), bam)
+                    if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
+                                                 in x['@type'],
+                                       encode_file['quality_metrics'])):
+                        self.attach_flagstat_qc_to(encode_file, bam)
+                    if not list(filter(lambda x: 'ComplexityXcorrQualityMetric'
+                                                 in x['@type'],
+                                       encode_file['quality_metrics'])):
+                        self.attach_cross_correlation_qc_to(encode_file, bam)
+                    accessioned_alignment_bams.append(encode_file)
         return accessioned_alignment_bams
 
     def accession_signal_outputs(self, task_name='macs2'):
@@ -503,14 +504,14 @@ class Accession(object):
             'sig_fc':   'fold change over control',
             'sig_pval': 'signal p-value'
         }
+        step_run = self.get_or_make_step_run(
+            self.lab_pi,
+            'atac-seq-signal-generation-step-run-v1',
+            '{}:atac-seq-signal-generation-step-version-v1'.format(self.lab_pi),
+            task_name)
         accessioned_signal_bigwigs = []
         tasks = self.analysis.get_tasks(task_name)
         for task in tasks:
-            step_run = self.get_or_make_step_run(
-                self.lab_pi,
-                'atac-seq-signal-generation-step-run-v1',
-                '{}:atac-seq-signal-generation-step-version-v1'.format(self.lab_pi),
-                task_name)
             for filekey, output_type in file_to_output.items():
                 for bigwig in [file
                                for file
@@ -522,21 +523,21 @@ class Accession(object):
                                                   step_run,
                                                   'filter',
                                                   'nodup_bam')
-                    encode_signal_file = self.accession_file(file_obj, bigwig)
-                    accessioned_signal_bigwigs.append(encode_signal_file)
+                    encode_file = self.accession_file(file_obj, bigwig)
+                    accessioned_signal_bigwigs.append(encode_file)
         return accessioned_signal_bigwigs
 
     def accession_raw_peaks(self, task_name='macs2'):
         file_to_output = {
             'bfilt_npeak':  'raw peaks'
         }
+        step_run = self.get_or_make_step_run(
+            self.lab_pi,
+            'atac-seq-peaks-filter-step-run-v1',
+            '{}:atac-seq-peaks-filter-step-version-v1'.format(self.lab_pi),
+            task_name)
         accessioned_raw_peaks = []
         for task in self.analysis.get_tasks(task_name):
-            step_run = self.get_or_make_step_run(
-                self.lab_pi,
-                'atac-seq-peaks-filter-step-run-v1',
-                '{}:atac-seq-peaks-filter-step-version-v1'.format(self.lab_pi),
-                task_name)
             for filekey, output_type in file_to_output.items():
                 for bed in [file
                             for file
@@ -548,10 +549,34 @@ class Accession(object):
                                                   step_run,
                                                   'filter'
                                                   'nodup_bam')
-                    encode_bed_file = self.accession_file(file_obj, bed)
-                    accessioned_raw_peaks.append(encode_bed_file)
+                    encode_file = self.accession_file(file_obj, bed)
+                    accessioned_raw_peaks.append(encode_file)
         return accessioned_raw_peaks
 
+    def accession_bigbed_raw_peaks(self, task_name='macs2'):
+        file_to_output = {
+            'bfilt_npeak_bb' = 'raw peaks'
+        }
+        step_run = self.get_or_make_step_run(
+            'atac-seq-filtered-peaks-to-bigbed-step-run-v1',
+            '{}:atac-seq-filtered-peaks-to-bigbed-step-version-v1'.format(self.lab_pi),
+            task_name)
+        accessioned_bb_raw_peaks = []
+        for task in self.analysis.get_tasks(task_name):
+            for filekey, output_type in file_to_output.items():
+                for bigbed in [file
+                               for file
+                               in task.output_files
+                               if filekey in file.filekeys]:
+                    file_obj = self.make_file_obj(bigbed,
+                                                  'bigBed',
+                                                  output_type,
+                                                  step_run,
+                                                  task_name,
+                                                  'bfilt_npeak')
+                    encode_file = self.accession_file(file_obj, bigbed)
+                    accessioned_bb_raw_peaks.append(encode_file)
+        return accessioned_bb_raw_peaks
 
 
 
