@@ -1,11 +1,11 @@
 import json
 import tempfile
-import base64
 import pdb
 import operator
 import encode_utils as eu
 from itertools import chain
 from functools import reduce
+from base64 import b64encode, b64decode
 from encode_utils.connection import Connection
 from google.cloud import storage
 
@@ -56,7 +56,7 @@ class GCBackend():
 
     # Converts base64 hash to hex format
     def md5_from_blob(self, blob):
-        return base64.b64decode(blob.md5_hash).hex()
+        return b64decode(blob.md5_hash).hex()
 
     # File path without bucket name
     def file_path(self, file):
@@ -413,8 +413,13 @@ class Accession(object):
         for key, value in flagstat_qc.items():
             if '_pct' in key:
                 flagstat_qc[key] = '{}%'.format(value)
+        step_run = encode_bam_file.get('step_run')
+        if isinstance(step_run, str):
+            step_run_id = step_run
+        elif isinstance(step_run, dict):
+            step_run_id = step_run.get('@id')
         flagstat_qc.update({
-            'step_run':             encode_bam_file.get('step_run').get('@id'),
+            'step_run':             step_run_id,
             'quality_metric_of':    [encode_bam_file.get('@id')],
             'status':               'released'})
         flagstat_qc.update(COMMON_METADATA)
@@ -433,6 +438,10 @@ class Accession(object):
         read_length = int(self.backend.read_file(read_length_file.filename).decode())
         xcor_qc = qc['xcor_score'][int(encode_bam_file.get('biological_replicates')[0]) - 1]
         pbc_qc = qc['pbc_qc'][int(encode_bam_file.get('biological_replicates')[0]) - 1]
+        if isinstance(step_run, str):
+            step_run_id = step_run
+        elif isinstance(step_run, dict):
+            step_run_id = step_run.get('@id')
         xcor_object = {
             'NRF':                  pbc_qc['NRF'],
             'PBC1':                 pbc_qc['PBC1'],
@@ -442,10 +451,11 @@ class Accession(object):
             'sample size':          xcor_qc['num_reads'],
             "fragment length":      xcor_qc['est_frag_len'],
             "quality_metric_of":    [encode_bam_file.get('@id')],
-            "step_run":             encode_bam_file.get('step_run').get('@id'),
+            "step_run":             step_run_id,
             "paired-end":           self.analysis.metadata['inputs']['atac.paired_end'],
             "read length":          read_length,
             "status":               "released",
+            "cross_correlation_plot": self.get_attachment(plot_pdf, 'application/pdf')
         }
         # "cross_correlation_plot": self.get_attachment(plot_pdf, 'application/pdf')
 
@@ -462,11 +472,16 @@ class Accession(object):
 
     def get_attachment(self, gs_file, mime_type):
         contents = self.backend.read_file(gs_file.filename)
+        contents = b64encode(contents)
+        if type(contents) is bytes:
+            # The Portal treats the contents as string "b'bytes'"
+            contents = str(contents).replace('b', '', 1).replace('\'', '')
+        pdb.set_trace()
         obj = {
             'type': mime_type,
             'download': gs_file.filename.split('/')[-1],
-            'href': 'data:{};charset=,{}'.format(mime_type,
-                                                 contents)
+            'href': 'data:{};base64,{}'.format(mime_type,
+                                               contents)
         }
         return obj
 
@@ -536,7 +551,7 @@ class Accession(object):
 
     def accession_raw_peaks(self, task_name='macs2'):
         file_to_output = {
-            'bfilt_npeak':  'filtered peaks'
+            'bfilt_npeak':  'peaks and background as input for IDR'
         }
         step_run = self.get_or_make_step_run(
             self.lab_pi,
@@ -562,7 +577,7 @@ class Accession(object):
 
     def accession_bigbed_conversion_raw_peaks(self, task_name='macs2'):
         file_to_output = {
-            'bfilt_npeak_bb':   'filtered peaks'
+            'bfilt_npeak_bb':   'peaks and background as input for IDR'
         }
         step_run = self.get_or_make_step_run(
             self.lab_pi,
@@ -616,9 +631,10 @@ class Accession(object):
 
     def accession_overlap_peaks(self, task_name='reproducibility_overlap'):
             file_to_output = {
-                'optimal_peak':         'replicated peaks',
-                'conservative_peak':    'conservative replicated peaks'
+                'optimal_peak':         'replicated peaks'
             }
+            # Following output type does not yet exist on the portal
+            # 'conservative_peak':    'conservative replicated peaks'
             step_run = self.get_or_make_step_run(
                 self.lab_pi,
                 'atac-seq-overlap-step-run-v1',
