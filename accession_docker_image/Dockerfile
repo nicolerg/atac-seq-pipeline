@@ -1,4 +1,4 @@
-FROM FROM alpine:3.8
+FROM alpine:3.8
 
 # Python 3 dependencies
 RUN apk add --no-cache python3 && \
