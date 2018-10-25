@@ -510,14 +510,15 @@ class Accession(object):
                                                   'fastqs',
                                                   inputs=True)
                     encode_file = self.accession_file(file_obj, bam)
-                    if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
-                                                 in x['@type'],
-                                       encode_file['quality_metrics'])):
-                        self.attach_flagstat_qc_to(encode_file, bam)
-                    if not list(filter(lambda x: 'ComplexityXcorrQualityMetric'
-                                                 in x['@type'],
-                                       encode_file['quality_metrics'])):
-                        self.attach_cross_correlation_qc_to(encode_file, bam)
+                    # Need to move QC object adding after all files are accessioned
+                    # if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
+                    #                              in x['@type'],
+                    #                    encode_file['quality_metrics'])):
+                    #     self.attach_flagstat_qc_to(encode_file, bam)
+                    # if not list(filter(lambda x: 'ComplexityXcorrQualityMetric'
+                    #                              in x['@type'],
+                    #                    encode_file['quality_metrics'])):
+                    #     self.attach_cross_correlation_qc_to(encode_file, bam)
                     accessioned_alignment_bams.append(encode_file)
         return accessioned_alignment_bams
 
@@ -628,7 +629,6 @@ class Accession(object):
                     accessioned_idr_peaks.append(encode_file)
         return accessioned_idr_peaks
 
-
     def accession_overlap_peaks(self, task_name='reproducibility_overlap'):
             file_to_output = {
                 'optimal_peak':         'replicated peaks'
@@ -656,6 +656,8 @@ class Accession(object):
                         encode_file = self.accession_file(file_obj, bed)
                         accessioned_idr_peaks.append(encode_file)
             return accessioned_idr_peaks
+
+
 
 
 
