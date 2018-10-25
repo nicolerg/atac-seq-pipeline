@@ -1,5 +1,4 @@
-# Official Cloud-SDK image
-FROM google/cloud-sdk:alpine
+FROM FROM alpine:3.8
 
 # Python 3 dependencies
 RUN apk add --no-cache python3 && \
