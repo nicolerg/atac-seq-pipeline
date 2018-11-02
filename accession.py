@@ -10,25 +10,11 @@ from encode_utils.connection import Connection
 from google.cloud import storage
 
 
-STEP_VERSION_ALIASES = {
-    'default': {
-        "trim-align-filter-step-v-1": '',
-        "peak-call-step-v-1": '',
-        "filtered-peaks-conversion-step-v-1": '',
-        "signals-step-v-1": '',
-        "idr-step-v-1": '',
-        "overlap-peaks-step-v-1": '',
-        "replicated-peaks-conversion-step-v-1": '',
-        "idr-peaks-conversion-step-v-1": ''
-    }
-}
-
 COMMON_METADATA = {
     'lab': '/labs/anshul-kundaje/',
     'award': 'U41HG007000'
 }
 
-XCOR_QC_KEYS = ['PBC',]
 
 ASSEMBLIES = ['GRCh38', 'mm10']
 
@@ -320,7 +306,6 @@ class Accession(object):
         payload[Connection.PROFILE_KEY] = 'analysis_step_runs'
         return self.conn.post(payload)
 
-
     @property
     def assembly(self):
         assembly = [reference
@@ -485,31 +470,27 @@ class Accession(object):
         }
         return obj
 
-    def accession_alignment_outputs(self, task_name='filter'):
-        file_to_output = {
-            'nodup_bam': 'alignments'
-        }
+    def accession_step(self, single_step_params):
         step_run = self.get_or_make_step_run(
             self.lab_pi,
-            'atac-seq-trim-align-filter-step-run-v1',
-            '{}:atac-seq-trim-align-filter-step-version-v1'.format(self.lab_pi),
-            task_name)
-        accessioned_alignment_bams = []
-        tasks = self.analysis.get_tasks(task_name)
-        for task in tasks:
-            for filekey, output_type in file_to_output.items():
-                for bam in [file
-                            for file
-                            in task.output_files
-                            if filekey in file.filekeys]:
-                    file_obj = self.make_file_obj(bam,
-                                                  'bam',
-                                                  output_type,
-                                                  step_run,
-                                                  'trim_adapter',
-                                                  'fastqs',
-                                                  inputs=True)
-                    encode_file = self.accession_file(file_obj, bam)
+            single_step_params['dcc_step_run'],
+            single_step_params['dcc_step_version'],
+            single_step_params['wdl_task_name'])
+        accessioned_files = []
+        for task in self.analysis.get_tasks(task_name):
+            for file_params in single_step_params['wdl_files']:
+                for wdl_file in [file
+                                 for file
+                                 in task.output_files
+                                 if file_params['filekey']
+                                 in file.filekeys]:
+                    obj = self.make_file_obj(wdl_file,
+                                             file_params['file_format'],
+                                             file_params['output_type'],
+                                             step_run,
+                                             file_params['derived_from_task'],
+                                             file_params['derived_from_filekey'])
+                    encode_file = self.accession_file(obj, wdl_file)
                     # Need to move QC object adding after all files are accessioned
                     # if not list(filter(lambda x: 'SamtoolsFlagstatsQualityMetric'
                     #                              in x['@type'],
@@ -519,176 +500,11 @@ class Accession(object):
                     #                              in x['@type'],
                     #                    encode_file['quality_metrics'])):
                     #     self.attach_cross_correlation_qc_to(encode_file, bam)
-                    accessioned_alignment_bams.append(encode_file)
-        return accessioned_alignment_bams
 
-    def accession_signal_outputs(self, task_name='macs2'):
-        file_to_output = {
-            'sig_fc':   'fold change over control',
-            'sig_pval': 'signal p-value'
-        }
-        step_run = self.get_or_make_step_run(
-            self.lab_pi,
-            'atac-seq-signal-generation-step-run-v1',
-            '{}:atac-seq-signal-generation-step-version-v1'.format(self.lab_pi),
-            task_name)
-        accessioned_signal_bigwigs = []
-        tasks = self.analysis.get_tasks(task_name)
-        for task in tasks:
-            for filekey, output_type in file_to_output.items():
-                for bigwig in [file
-                               for file
-                               in task.output_files
-                               if filekey in file.filekeys]:
-                    file_obj = self.make_file_obj(bigwig,
-                                                  'bigWig',
-                                                  output_type,
-                                                  step_run,
-                                                  'filter',
-                                                  'nodup_bam')
-                    encode_file = self.accession_file(file_obj, bigwig)
-                    accessioned_signal_bigwigs.append(encode_file)
-        return accessioned_signal_bigwigs
+                    accessioned_files.append(encode_file)
+        return accessioned_files
 
-    def accession_raw_peaks(self, task_name='macs2'):
-        file_to_output = {
-            'bfilt_npeak':  'peaks and background as input for IDR'
-        }
-        step_run = self.get_or_make_step_run(
-            self.lab_pi,
-            'atac-seq-peaks-filter-step-run-v1',
-            '{}:atac-seq-peaks-filter-step-version-v1'.format(self.lab_pi),
-            task_name)
-        accessioned_raw_peaks = []
-        for task in self.analysis.get_tasks(task_name):
-            for filekey, output_type in file_to_output.items():
-                for bed in [file
-                            for file
-                            in task.output_files
-                            if filekey in file.filekeys]:
-                    file_obj = self.make_file_obj(bed,
-                                                  'bed',
-                                                  output_type,
-                                                  step_run,
-                                                  'filter',
-                                                  'nodup_bam')
-                    encode_file = self.accession_file(file_obj, bed)
-                    accessioned_raw_peaks.append(encode_file)
-        return accessioned_raw_peaks
-
-    def accession_bigbed_conversion_raw_peaks(self, task_name='macs2'):
-        file_to_output = {
-            'bfilt_npeak_bb':   'peaks and background as input for IDR'
-        }
-        step_run = self.get_or_make_step_run(
-            self.lab_pi,
-            'atac-seq-filtered-peaks-to-bigbed-step-run-v1',
-            '{}:atac-seq-filtered-peaks-to-bigbed-step-version-v1'.format(self.lab_pi),
-            task_name)
-        accessioned_bb_raw_peaks = []
-        for task in self.analysis.get_tasks(task_name):
-            for filekey, output_type in file_to_output.items():
-                for bigbed in [file
-                               for file
-                               in task.output_files
-                               if filekey in file.filekeys]:
-                    file_obj = self.make_file_obj(bigbed,
-                                                  'bigBed',
-                                                  output_type,
-                                                  step_run,
-                                                  task_name,
-                                                  'bfilt_npeak')
-                    encode_file = self.accession_file(file_obj, bigbed)
-                    accessioned_bb_raw_peaks.append(encode_file)
-        return accessioned_bb_raw_peaks
-
-    def accession_idr_peaks(self, task_name='reproducibility_idr'):
-        file_to_output = {
-            'optimal_peak':         'optimal idr thresholded peaks',
-            'conservative_peak':    'conservative idr thresholded peaks'
-        }
-        step_run = self.get_or_make_step_run(
-            self.lab_pi,
-            'atac-seq-idr-step-run-v1',
-            '{}:atac-seq-idr-step-version-v1'.format(self.lab_pi),
-            task_name)
-        accessioned_idr_peaks = []
-        for task in self.analysis.get_tasks(task_name):
-            for filekey, output_type in file_to_output.items():
-                for bed in [file
-                            for file
-                            in task.output_files
-                            if filekey in file.filekeys]:
-                    file_obj = self.make_file_obj(bed,
-                                                  'bed',
-                                                  output_type,
-                                                  step_run,
-                                                  'macs2',
-                                                  'bfilt_npeak')
-                    encode_file = self.accession_file(file_obj, bed)
-                    accessioned_idr_peaks.append(encode_file)
-        return accessioned_idr_peaks
-
-    def accession_overlap_peaks(self, task_name='reproducibility_overlap'):
-            file_to_output = {
-                'optimal_peak':         'replicated peaks'
-            }
-            # Following output type does not yet exist on the portal
-            # 'conservative_peak':    'conservative replicated peaks'
-            step_run = self.get_or_make_step_run(
-                self.lab_pi,
-                'atac-seq-overlap-step-run-v1',
-                '{}:atac-seq-overlap-step-version-v1'.format(self.lab_pi),
-                task_name)
-            accessioned_idr_peaks = []
-            for task in self.analysis.get_tasks(task_name):
-                for filekey, output_type in file_to_output.items():
-                    for bed in [file
-                                for file
-                                in task.output_files
-                                if filekey in file.filekeys]:
-                        file_obj = self.make_file_obj(bed,
-                                                      'bed',
-                                                      output_type,
-                                                      step_run,
-                                                      'macs2',
-                                                      'bfilt_npeak')
-                        encode_file = self.accession_file(file_obj, bed)
-                        accessioned_idr_peaks.append(encode_file)
-            return accessioned_idr_peaks
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def accession_steps(self, steps_and_params_json):
+        for step in steps_and_parameters_json:
+            self.accession_step(step)
 
