@@ -113,7 +113,6 @@ cromwell*.jar
 output_*.json
 test/*_standalone.wdl
 .DS_Store
-<<<<<<< HEAD
 
 # Google Cloud Libraries
 accession_google_outputs/
