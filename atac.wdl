@@ -435,6 +435,8 @@ workflow atac {
 			peaks = overlap.bfilt_overlap_peak,
 			peaks_pr = overlap_pr.bfilt_overlap_peak,
 			peak_ppr = overlap_ppr.bfilt_overlap_peak,
+			peak_type = peak_type,
+			chrsz = chrsz,
 		}
 	}
 	if ( !align_only && !true_rep_only && enable_idr ) {
@@ -444,6 +446,8 @@ workflow atac {
 			peaks = idr.bfilt_idr_peak,
 			peaks_pr = idr_pr.bfilt_idr_peak,
 			peak_ppr = idr_ppr.bfilt_idr_peak,
+			peak_type = peak_type,
+			chrsz = chrsz,
 		}
 	}
 	# Generate final QC report and JSON		
@@ -512,7 +516,13 @@ workflow atac {
 			reg2map = reg2map,
 			roadmap_meta = roadmap_meta,
 		}
-	}	
+	}
+
+	output {
+		File report = qc_report.report
+		File qc_json = qc_report.qc_json
+		Boolean qc_json_match = qc_report.qc_json_match
+	}
 }
 
 task trim_adapter { # trim adapters and merge trimmed fastqs
@@ -804,7 +814,7 @@ task macs2 {
 	}
 	runtime {
 		cpu : 1
-		memory : "${select_first([mem_mb,'20000'])} MB"
+		memory : "${select_first([mem_mb,'16000'])} MB"
 		time : select_first([time_hr,24])
 		disks : select_first([disks,"local-disk 100 HDD"])
 	}
@@ -903,17 +913,23 @@ task reproducibility {
                         # x,y means peak file from rep-x vs rep-y
 	Array[File]? peaks_pr	# peak files from pseudo replicates
 	File? peak_ppr			# Peak file from pooled pseudo replicate.
+	String peak_type
+	File chrsz			# 2-col chromosome sizes file
 
 	command {
 		python $(which encode_reproducibility_qc.py) \
 			${sep=' ' peaks} \
 			--peaks-pr ${sep=' ' peaks_pr} \
 			${"--peak-ppr "+ peak_ppr} \
-			--prefix ${prefix}
+			--prefix ${prefix} \
+			${"--peak-type " + peak_type} \
+			${"--chrsz " + chrsz}
 	}
 	output {
 		File optimal_peak = glob("optimal_peak.gz")[0]
 		File conservative_peak = glob("conservative_peak.gz")[0]
+		File optimal_peak_bb = glob("optimal_peak.*.bb")[0]
+		File conservative_peak_bb = glob("conservative_peak.*.bb")[0]
 		File reproducibility_qc = glob("*reproducibility.qc")[0]
 	}
 	runtime {
@@ -957,7 +973,6 @@ task ataqc { # generate ATAQC report
 	String? disks
 
 	command {
-		export PICARDROOT=$(dirname $(which picard.jar))
 		export _JAVA_OPTIONS="-Xms256M -Xmx${select_first([mem_mb,'16000'])}M -XX:ParallelGCThreads=1"
 
 		python $(which encode_ataqc.py) \
@@ -1009,7 +1024,7 @@ task ataqc { # generate ATAQC report
 	}
 	runtime {
 		cpu : 1
-		memory : "${select_first([mem_mb,'20000'])} MB"
+		memory : "${select_first([mem_mb,'16000'])} MB"
 		time : select_first([time_hr,24])
 		disks : select_first([disks,"local-disk 100 HDD"])
 	}
@@ -1107,10 +1122,10 @@ task qc_report {
 task read_genome_tsv {
 	File genome_tsv
 	command {
-		echo "Reading genome_tsv ${genome_tsv} ..."
+		cat ${genome_tsv}
 	}
 	output {
-		Map[String,String] genome = read_map(genome_tsv)
+		Map[String,String] genome = read_map(stdout())
 	}
 	runtime {
 		cpu : 1
