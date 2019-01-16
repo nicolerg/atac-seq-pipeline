@@ -2,6 +2,7 @@
 # Author: Jin Lee (leepc12@gmail.com)
 
 workflow atac {
+	String pipeline_ver = 'v1.1.5'
 	### sample name, description
 	String title = 'Untitled'
 	String description = 'No description'
@@ -90,9 +91,9 @@ workflow atac {
 	String macs2_disks = "local-disk 100 HDD"
 
 	Int ataqc_mem_mb = 16000
-	Int ataqc_mem_java_mb = 16000
+	Int ataqc_mem_java_mb = 15000
 	Int ataqc_time_hr = 24
-	String ataqc_disks = "local-disk 100 HDD"
+	String ataqc_disks = "local-disk 400 HDD"
 
 	#### input file definition
 		# pipeline can start from any type of inputs and then leave all other types undefined
@@ -568,28 +569,36 @@ workflow atac {
 		}
 	}
 
-	# ATAQC is available only when pipeline starts from fastqs, take fastqs[] as base array for ataqc
-	Array[Array[Array[File]]] fastqs_ataqc = 
-		if basename(tss_enrich)=='null' || disable_ataqc || align_only || true_rep_only then [] else fastqs_
+	# count number of replicates for ataqc	
+	Int num_rep = if disable_ataqc then 0
+		else if length(fastqs_)>0 then length(fastqs_)
+		else if length(bams_)>0 then length(bams_)
+		else if length(tas_)>0 then length(tas_)
+		else if length(peaks_pr1)>0 then length(peaks_pr1)
+		else 0
+	File? null
 
-	scatter( i in range(length(fastqs_ataqc)) ) {
+	scatter( i in range(num_rep) ) {
 		call ataqc { input : 
 			paired_end = paired_end,
-			read_len_log = bowtie2.read_len_log[i],
-			flagstat_log = bowtie2.flagstat_qc[i],
-			bowtie2_log = bowtie2.align_log[i],
-			pbc_log = filter.pbc_qc[i],
-			dup_log = filter.dup_qc[i],
-			bam = bams_[i],
-			nodup_flagstat_log = filter.flagstat_qc[i],
-			mito_dup_log = filter.mito_dup_log[i],
-			nodup_bam = nodup_bams_[i],
-			ta = tas_[i],
-			peak = if enable_idr then select_first([idr_pr.bfilt_idr_peak])[i]
+			read_len_log = if length(bowtie2.read_len_log)>0 then bowtie2.read_len_log[i] else null,
+			flagstat_log = if length(bowtie2.flagstat_qc)>0 then bowtie2.flagstat_qc[i] else null,
+			bowtie2_log = if length(bowtie2.align_log)>0 then bowtie2.align_log[i] else null,
+			pbc_log = if length(filter.pbc_qc)>0 then filter.pbc_qc[i] else null,
+			dup_log = if length(filter.dup_qc)>0 then filter.dup_qc[i] else null,
+			bam = if length(bams_)>0 then bams_[i] else null,
+			nodup_flagstat_log = if length(filter.flagstat_qc)>0 then filter.flagstat_qc[i] else null,
+			mito_dup_log = if length(filter.mito_dup_log)>0 then filter.mito_dup_log[i] else null,
+			nodup_bam = if length(nodup_bams_)>0 then nodup_bams_[i] else null,
+			ta = if length(tas_)>0 then tas_[i] else null,
+			peak = if align_only then null
+					else if enable_idr then select_first([idr_pr.bfilt_idr_peak])[i]
 					else reproducibility_overlap.optimal_peak,
-			idr_peak = reproducibility_idr.optimal_peak, #idr_peaks_ataqc[i],
-			overlap_peak= reproducibility_overlap.optimal_peak, #overlap_peaks_ataqc[i],
-			bigwig = macs2.sig_pval[i],
+			idr_peak = if align_only || !enable_idr then null
+					else reproducibility_idr.optimal_peak, #idr_peaks_ataqc[i],
+			overlap_peak= if align_only then null
+					else reproducibility_overlap.optimal_peak, #overlap_peaks_ataqc[i],
+			bigwig = if length(macs2.sig_pval)>0 then macs2.sig_pval[i] else null,
 			ref_fa = ref_fa,
 			chrsz = chrsz,
 			tss_enrich = tss_enrich,
@@ -610,8 +619,10 @@ workflow atac {
 
 	# Generate final QC report and JSON		
 	call qc_report { input :
+		pipeline_ver = pipeline_ver,
 		title = title,
 		description = description,
+		genome = basename(genome_tsv),
 		multimapping = multimapping,
 		paired_end = paired_end,
 		pipeline_type = pipeline_type,
@@ -650,7 +661,7 @@ workflow atac {
 	output {
 		File report = qc_report.report
 		File qc_json = qc_report.qc_json
-		Boolean qc_json_match = qc_report.qc_json_match
+		Boolean qc_json_ref_match = qc_report.qc_json_ref_match
 	}
 }
 
@@ -750,6 +761,8 @@ task filter {
 	String disks
 
 	command {
+		${if no_dup_removal then "touch null.dup.qc null.pbc.qc null.mito_dup.txt; " else ""}
+		touch null
 		python $(which encode_filter.py) \
 			${bam} \
 			${if paired_end then "--paired-end" else ""} \
@@ -758,9 +771,6 @@ task filter {
 			${"--mapq-thresh " + mapq_thresh} \
 			${if no_dup_removal then "--no-dup-removal" else ""} \
 			${"--nth " + cpu}
-		# ugly part to deal with optional outputs with Google JES backend
-		${if no_dup_removal then "touch null.dup.qc null.pbc.qc null.mito_dup.txt; " else ""}
-		touch null
 	}
 	output {
 		File nodup_bam = glob("*.bam")[0]
@@ -902,6 +912,9 @@ task macs2 {
 	String disks
 
 	command {
+		${if make_signal then "" 
+			else "touch null.pval.signal.bigwig null.fc.signal.bigwig"}
+		touch null 
 		python $(which encode_macs2_atac.py) \
 			${ta} \
 			${"--gensz "+ gensz} \
@@ -912,11 +925,6 @@ task macs2 {
 			${if make_signal then "--make-signal" else ""} \
 			${if keep_irregular_chr_in_bfilt_peak then "--keep-irregular-chr" else ""} \
 			${"--blacklist "+ blacklist}
-		
-		# ugly part to deal with optional outputs with Google JES backend
-		${if make_signal then "" 
-			else "touch null.pval.signal.bigwig null.fc.signal.bigwig"}
-		touch null 
 	}
 	output {
 		File npeak = glob("*[!.][!b][!f][!i][!l][!t].narrowPeak.gz")[0]
@@ -950,6 +958,8 @@ task idr {
 	String rank
 
 	command {
+		${if defined(ta) then "" else "touch null.frip.qc"}
+		touch null 
 		python $(which encode_idr.py) \
 			${peak1} ${peak2} ${peak_pooled} \
 			${"--prefix " + prefix} \
@@ -960,10 +970,6 @@ task idr {
 			${"--blacklist "+ blacklist} \
 			${if keep_irregular_chr_in_bfilt_peak then "--keep-irregular-chr" else ""} \
 			${"--ta " + ta}
-
-		# ugly part to deal with optional outputs with Google backend
-		${if defined(ta) then "" else "touch null.frip.qc"}
-		touch null 
 	}
 	output {
 		File idr_peak = glob("*[!.][!b][!f][!i][!l][!t]."+peak_type+".gz")[0]
@@ -995,6 +1001,8 @@ task overlap {
 	String peak_type
 
 	command {
+		${if defined(ta) then "" else "touch null.frip.qc"}
+		touch null 
 		python $(which encode_naive_overlap.py) \
 			${peak1} ${peak2} ${peak_pooled} \
 			${"--prefix " + prefix} \
@@ -1004,10 +1012,6 @@ task overlap {
 			--nonamecheck \
 			${if keep_irregular_chr_in_bfilt_peak then "--keep-irregular-chr" else ""} \
 			${"--ta " + ta}
-
-		# ugly part to deal with optional outputs with Google backend
-		${if defined(ta) then "" else "touch null.frip.qc"}
-		touch null 
 	}
 	output {
 		File overlap_peak = glob("*[!.][!b][!f][!i][!l][!t]."+peak_type+".gz")[0]
@@ -1052,7 +1056,7 @@ task reproducibility {
 		File optimal_peak_bb = glob("optimal_peak.*.bb")[0]
 		File conservative_peak_bb = glob("conservative_peak.*.bb")[0]
 		Array[File] optimal_peak_hammock = glob("optimal_peak.*.hammock.gz*")
-		Array[File] conservative_peak_hammock = glob("conservative_peak.*.hammock_gz*")
+		Array[File] conservative_peak_hammock = glob("conservative_peak.*.hammock.gz*")
 		File reproducibility_qc = glob("*reproducibility.qc")[0]
 	}
 	runtime {
@@ -1065,31 +1069,31 @@ task reproducibility {
 
 task ataqc { # generate ATAQC report
 	Boolean paired_end
-	File read_len_log
-	File flagstat_log
-	File bowtie2_log
-	File bam
-	File nodup_flagstat_log
-	File mito_dup_log
-	File dup_log
-	File pbc_log
-	File nodup_bam
-	File ta
+	File? read_len_log
+	File? flagstat_log
+	File? bowtie2_log
+	File? bam
+	File? nodup_flagstat_log
+	File? mito_dup_log
+	File? dup_log
+	File? pbc_log
+	File? nodup_bam
+	File? ta
 	File? peak
 	File? idr_peak 
 	File? overlap_peak
-	File bigwig
+	File? bigwig
 	# from genome database
-	File ref_fa
-	File chrsz
-	File tss_enrich
-	File blacklist
-	File dnase
-	File prom
-	File enh
-	File reg2map_bed
-	File reg2map
-	File roadmap_meta
+	File? ref_fa
+	File? chrsz
+	File? tss_enrich
+	File? blacklist
+	File? dnase
+	File? prom
+	File? enh
+	File? reg2map_bed
+	File? reg2map
+	File? roadmap_meta
 
 	Int mem_mb
 	Int mem_java_mb
@@ -1101,30 +1105,31 @@ task ataqc { # generate ATAQC report
 
 		python $(which encode_ataqc.py) \
 			${if paired_end then "--paired-end" else ""} \
-			--read-len-log ${read_len_log} \
-			--flagstat-log ${flagstat_log} \
-			--bowtie2-log ${bowtie2_log} \
-			--bam ${bam} \
-			--nodup-flagstat-log ${nodup_flagstat_log} \
-			--mito-dup-log ${mito_dup_log} \
-			--dup-log ${dup_log} \
-			--pbc-log ${pbc_log} \
-			--nodup-bam ${nodup_bam} \
-			--ta ${ta} \
-			--bigwig ${bigwig} \
+			${"--read-len-log " + read_len_log} \
+			${"--flagstat-log " + flagstat_log} \
+			${"--bowtie2-log " + bowtie2_log} \
+			${"--bam " + bam} \
+			${"--nodup-flagstat-log " + nodup_flagstat_log} \
+			${"--mito-dup-log " + mito_dup_log} \
+			${"--dup-log " + dup_log} \
+			${"--pbc-log " + pbc_log} \
+			${"--nodup-bam " + nodup_bam} \
+			${"--ta " + ta} \
+			${"--bigwig " + bigwig} \
 			${"--peak " + peak} \
 			${"--idr-peak " + idr_peak} \
 			${"--overlap-peak " + overlap_peak} \
-			--ref-fa ${ref_fa} \
-			--blacklist ${blacklist} \
-			--chrsz ${chrsz} \
-			--dnase ${dnase} \
-			--tss-enrich ${tss_enrich} \
-			--prom ${prom} \
-			--enh ${enh} \
-			--reg2map-bed ${reg2map_bed} \
-			--reg2map ${reg2map} \
-			--roadmap-meta ${roadmap_meta}
+			${"--ref-fa " + ref_fa} \
+			${"--blacklist " + blacklist} \
+			${"--chrsz " + chrsz} \
+			${"--dnase " + dnase} \
+			${"--tss-enrich " + tss_enrich} \
+			${"--prom " + prom} \
+			${"--enh " + enh} \
+			${"--reg2map-bed " + reg2map_bed} \
+			${"--reg2map " + reg2map} \
+			${"--roadmap-meta " + roadmap_meta}
+
 	}
 	output {
 		File html = glob("*_qc.html")[0]
@@ -1143,8 +1148,10 @@ task ataqc { # generate ATAQC report
 # - qc.json		: all QCs
 task qc_report {
 	# optional metadata
+	String pipeline_ver
  	String title # name of sample
 	String description # description for sample
+	String? genome
 	#String? encode_accession_id	# ENCODE accession ID of sample
 	# workflow params
 	Int multimapping
@@ -1185,8 +1192,10 @@ task qc_report {
 
 	command {
 		python $(which encode_qc_report.py) \
-			${"--name '" + sub(title,"'","_") + "'"} \
+			${"--pipeline-ver " + pipeline_ver} \
+			${"--title '" + sub(title,"'","_") + "'"} \
 			${"--desc '" + sub(description,"'","_") + "'"} \
+			${"--genome " + genome} \
 			${"--multimapping " + multimapping} \
 			${if paired_end then "--paired-end" else ""} \
 			--pipeline-type ${pipeline_type} \
@@ -1220,14 +1229,13 @@ task qc_report {
 			--ataqc-txts ${sep=' ' ataqc_txts} \
 			--ataqc-htmls ${sep=' ' ataqc_htmls} \
 			--out-qc-html qc.html \
-			--out-qc-json qc.json
-		
-		diff qc.json ${if defined(qc_json_ref) then qc_json_ref else "/dev/null"} | wc -l > qc_json_match.txt
+			--out-qc-json qc.json \
+			${"--qc-json-ref " + qc_json_ref}		
 	}
 	output {
 		File report = glob('*qc.html')[0]
 		File qc_json = glob('*qc.json')[0]
-		Boolean qc_json_match = read_int("qc_json_match.txt")==0
+		Boolean qc_json_ref_match = read_string("qc_json_ref_match.txt")=="True"
 	}
 	runtime {
 		cpu : 1
@@ -1240,10 +1248,10 @@ task qc_report {
 task read_genome_tsv {
 	File genome_tsv
 	command {
-		cat ${genome_tsv}
+		cat ${genome_tsv} > 'tmp.tsv'
 	}
 	output {
-		Map[String,String] genome = read_map(stdout())
+		Map[String,String] genome = read_map('tmp.tsv')
 	}
 	runtime {
 		cpu : 1

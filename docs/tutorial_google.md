@@ -1,5 +1,4 @@
-Tutorial for Google Cloud Platform
-===================================================
+# Tutorial for Google Cloud Platform
 
 All test samples and genome data are shared on our public Google Cloud buckets. You don't have to download any data for testing our pipeline on Google Cloud.
 
@@ -15,40 +14,42 @@ All test samples and genome data are shared on our public Google Cloud buckets. 
     * Genomics API
 
 7. Install [Google Cloud Platform SDK](https://cloud.google.com/sdk/downloads) and authenticate through it. You will be asked to enter verification keys. Get keys from the URLs they provide.
-    ```
-      $ gcloud auth login --no-launch-browser
-      $ gcloud auth application-default login --no-launch-browser
+    ```bash
+    $ gcloud auth login --no-launch-browser
+    $ gcloud auth application-default login --no-launch-browser
     ```
 
 8. If you see permission errors at runtime, then unset environment variable `GOOGLE_APPLICATION_CREDENTIALS` or add it to your BASH startup scripts (`$HOME/.bashrc` or `$HOME/.bash_profile`).
-    ```
+    ```bash
       unset GOOGLE_APPLICATION_CREDENTIALS
     ```
 
 7. Set your default Google Cloud Project. Pipeline will provision instances on this project.
-    ```
-      $ gcloud config set project [YOUR_PROJECT_NAME]
-    ```
-
-8. Git clone this pipeline and move into it.
-    ```
-      $ git clone https://github.com/ENCODE-DCC/atac-seq-pipeline
-      $ cd atac-seq-pipeline
+    ```bash
+    $ gcloud config set project [YOUR_PROJECT_NAME]
     ```
 
-9. Download [cromwell](https://github.com/broadinstitute/cromwell).
+8. Download [cromwell](https://github.com/broadinstitute/cromwell).
+    ```bash
+    $ cd
+    $ wget https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
+    $ chmod +rx cromwell-34.jar
     ```
-      $ wget https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
-      $ chmod +rx cromwell-34.jar
+
+9. Git clone this pipeline and move into it.
+    ```bash
+    $ cd
+    $ git clone https://github.com/ENCODE-DCC/atac-seq-pipeline
+    $ cd atac-seq-pipeline
     ```
 
 10. Run a pipeline for a SUBSAMPLED (1/400) paired-end sample of [ENCSR356KRQ](https://www.encodeproject.org/experiments/ENCSR356KRQ/).
-    ```
-      $ PROJECT=[YOUR_PROJECT_NAME]
-      $ BUCKET=gs://[YOUR_BUCKET_NAME]/ENCSR356KRQ_subsampled
-      $ INPUT=examples/google/ENCSR356KRQ_subsampled.json
+    ```bash
+    $ PROJECT=[YOUR_PROJECT_NAME]
+    $ BUCKET=gs://[YOUR_BUCKET_NAME]/ENCSR356KRQ_subsampled
+    $ INPUT=examples/google/ENCSR356KRQ_subsampled.json
 
-      $ java -jar -Dconfig.file=backends/backend.conf -Dbackend.default=google -Dbackend.providers.google.config.project=${PROJECT} -Dbackend.providers.google.config.root=${BUCKET} cromwell-34.jar run atac.wdl -i ${INPUT} -o workflow_opts/docker.json
+    $ java -jar -Dconfig.file=backends/backend.conf -Dbackend.default=google -Dbackend.providers.google.config.project=${PROJECT} -Dbackend.providers.google.config.root=${BUCKET} cromwell-34.jar run atac.wdl -i ${INPUT} -o workflow_opts/docker.json
     ```
 
 11. It will take about an hour. You will be able to find all outputs on your Google Cloud bucket. Final QC report/JSON will be written on `gs://[YOUR_BUCKET_NAME]/ENCSR356KRQ_subsampled/atac/[SOME_HASH_STRING]/call-qc_report/execution/glob*/qc.html` or `qc.json`. See [output directory structure](output.md) for details.
@@ -65,21 +66,21 @@ All test samples and genome data are shared on our public Google Cloud buckets. 
     * Networks
 
 2. Set `default_runtime_attributes.zones` in `workflow_opts/docker.json` as your preferred Google Cloud zone.
-    ```
-      {
-        "default_runtime_attributes" : {
-          ...
-          "zones": "us-west1-a us-west1-b us-west1-c",
-          ...
-      }
+    ```javascript
+    {
+      "default_runtime_attributes" : {
+        ...
+        "zones": "us-west1-a us-west1-b us-west1-c",
+        ...
+    }
     ```
 
 3. Set `default_runtime_attributes.preemptible` as `"0"` to disable preemptible instances. This value means a number of retrial for failures in a preemtible instance. Pipeline defaults not to use [preemptible instances](https://cloud.google.com/compute/docs/instances/preemptible). If all retrial fails then the instance will be upgraded to a regular one. **Disabling preemtible instances will cost you significantly more** but you can get your samples processed much faster and stabler. Preemptible instance is disabled by default. Some hard tasks like `bowtie2`, `bwa` and `spp` will not be executed on preemtible instances since they can take longer than the limit (24 hours) of preemptible instances.
-    ```
-      {
-        "default_runtime_attributes" : {
-          ...
-          "preemptible": "0",
-          ...
-      }
+    ```javascript
+    {
+      "default_runtime_attributes" : {
+        ...
+        "preemptible": "0",
+        ...
+    }
     ```
