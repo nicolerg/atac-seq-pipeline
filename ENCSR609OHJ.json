@@ -1,0 +1,38 @@
+{
+    "atac.pipeline_type" : "atac",
+    "atac.genome_tsv" : "gs://encode-pipeline-genome-data/mm10_google.tsv",
+    "atac.fastqs" : [
+        [ 
+            ["gs://atac-seq-accessioning-samples/ENCSR609OHJ/rep_1/ENCFF599TJR.fastq.gz", 
+             "gs://atac-seq-accessioning-samples/ENCSR609OHJ/rep_1/ENCFF176IZG.fastq.gz"]
+        ],
+        [
+            ["gs://atac-seq-accessioning-samples/ENCSR609OHJ/rep_2/ENCFF957VLH.fastq.gz",
+             "gs://atac-seq-accessioning-samples/ENCSR609OHJ/rep_2/ENCFF999IJT.fastq.gz"]
+        ]
+    ],
+
+    "atac.paired_end" : true,
+    "atac.multimapping" : 4,
+
+    "atac.auto_detect_adapter" : true,
+
+    "atac.trim_adapter.cpu" : 2,
+
+    "atac.bowtie2_cpu" : 4,
+    "atac.bowtie2_mem_mb" : 16000,
+
+    "atac.filter_cpu" : 2,
+    "atac.filter_mem_mb" : 12000,
+
+    "atac.macs2_mem_mb" : 16000,
+
+    "atac.smooth_win" : 73,
+    "atac.enable_idr" : true,
+    "atac.idr_thresh" : 0.05,
+
+    "atac.enable_xcor" : true,
+
+    "atac.title" : "ENCSR609OHJ",
+    "atac.description" : "ATAC-seq on postnatal p0 mouse liver"
+}
