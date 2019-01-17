@@ -33,6 +33,8 @@
 
     "atac.enable_xcor" : true,
 
+    "atac.ataqc_mem_java_mb" : 8000,
+
     "atac.title" : "ENCSR609OHJ",
     "atac.description" : "ATAC-seq on postnatal p0 mouse liver"
 }

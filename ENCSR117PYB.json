@@ -29,6 +29,8 @@
 
     "atac.enable_xcor" : true,
 
+    "atac.ataqc_mem_java_mb" : 8000,
+
 
     "atac.title" : "ENCSR117PYB",
     "atac.description" : "ATAC-seq on human heart left ventricle"
