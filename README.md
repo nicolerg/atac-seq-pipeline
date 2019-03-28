@@ -153,9 +153,9 @@ Read [here](https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/utils/re
 
 ## 6. Compile QC metrics across a batch of samples into a single TSV file
 
-Follow the instructions [here](https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/utils/qc_jsons_to_tsv/README.md). 
+The pipeline generates a `qc.json` QC report for each sample. Follow the instructions [here](https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/utils/qc_jsons_to_tsv/README.md) to compile QC metrics across samples into a single TSV file. 
 
-**Table 5.1** provides definitions for a limited number of metrics included in the JSON QC reports. The full JSON report includes ~120 lines per sample; some lines are duplicates, and many metrics are irrelevant for running the pipeline with a single biological replicate. Therefore, this table includes a subset of relevant and important metrics.  
+**Table 5.1** provides definitions for a limited number of metrics included in the JSON QC reports. The full JSON report includes ~120 lines per sample; some lines are duplicates, and many metrics are irrelevant for running the pipeline with a single biological replicate. Therefore, this table includes a subset of relevant and important metrics when running a single replicate (as will usually be the case for Montgomery Lab ATAC-seq analysis).  
 
 **Table 5.1 Description of relevant QC metrics.**
 
