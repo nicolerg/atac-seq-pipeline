@@ -1,0 +1,22 @@
+
+    "atac.description" : "African omics",
+    "atac.pipeline_type" : "atac",
+
+    "atac.multimapping" : 0,
+
+    "atac.trim_adapter_cpu" : 4,
+    "atac.bowtie2_cpu" : 4,
+    "atac.filter_cpu" : 4,
+    "atac.bam2ta_cpu" : 4,
+    "atac.xcor_cpu" : 4,
+
+    "atac.trim_adapter_mem_mb" : 20000,
+    "atac.bowtie2_mem_mb" : 20000,
+    "atac.filter_mem_mb" : 20000,
+    "atac.bam2ta_mem_mb" : 20000,
+    "atac.spr_mem_mb" : 20000,
+    "atac.xcor_mem_mb" : 20000,
+    "atac.macs2_mem_mb" : 20000,
+    "atac.ataqc_mem_mb" : 20000,
+    "atac.ataqc_mem_java_mb" : 20000,
+
