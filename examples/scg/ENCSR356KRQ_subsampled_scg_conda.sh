@@ -2,6 +2,7 @@
 
 # do not touch these settings
 #  number of tasks and nodes are fixed at 1
+#SBATCH --account=smontgom
 #SBATCH -n 1
 #SBATCH --ntasks-per-node=1
 
@@ -32,11 +33,14 @@
 # email notification for job status
 #SBATCH --mail-type=END,FAIL
 
-# load java module if it exists
-module load java
+set -e
 
-# activate pipeline's Conda environment if Conda env exists
+module load java
+module load miniconda/3
 source activate encode-atac-seq-pipeline
+
+# check pysam
+python -c "import pysam"
 
 # use input JSON for a small test sample
 #  you make an input JSON for your own sample
@@ -44,7 +48,8 @@ source activate encode-atac-seq-pipeline
 #  (examples/template_se.json, examples/template_pe.json)
 #  do not use an input JSON file for a test sample (ENCSR356KRQ)
 #  it's a sample with multimapping reads
-INPUT=examples/scg/ENCSR356KRQ_subsampled_scg.json
+srcdir=/labs/smontgom/shared/atac_encode_pl/atac-seq-pipeline
+INPUT=${srcdir}/examples/scg/ENCSR356KRQ_subsampled_scg.json
 
 # If this pipeline fails, then use this metadata JSON file to resume a failed pipeline from where it left 
 # See details in /utils/resumer/README.md
@@ -60,6 +65,6 @@ NUM_CONCURRENT_TASK=2
 
 # run pipeline
 #  you can monitor your jobs with "squeue -u $USER"
-java -jar -Dconfig.file=backends/backend.conf \
+java -jar -Dconfig.file=${srcdir}/backends/backend.conf \
 -Dbackend.providers.Local.config.concurrent-job-limit=${NUM_CONCURRENT_TASK} \
-$HOME/cromwell-34.jar run atac.wdl -i ${INPUT} -m ${PIPELINE_METADATA}
+$HOME/cromwell-34.jar run ${srcdir}/atac.wdl -i ${INPUT} -m ${PIPELINE_METADATA}
