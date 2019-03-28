@@ -180,7 +180,7 @@ The pipeline generates a `qc.json` QC report for each sample. Follow the instruc
 |ataqc|Presence of Mono-Nuc peak|Presence of mono-nucleosomal peak (read lengths ~120-250)|
 |ataqc|TSS_enrichment|Enrichment of reads in transcription start sites|
 
-**NOTE:** As of Feb. 14, 2019, the following QC metrics are misreported when the multimapping parameter is set to a non-zero number. An issue has been submitted, and this MOP will be updated to reflect when the issue is fixed. Until then, please disregard these metrics. 
+**NOTE:** As of Feb. 14, 2019, the following QC metrics are misreported when the multimapping parameter is set to a non-zero number. An issue has been submitted, and this documentation will be updated to reflect when the issue is fixed. Until then, please disregard these metrics. 
 - flaqstat_qc: total (inflated) 
 - flagstat_qc: mapped (inflated)    
 - ataqc: read count from sequencer (inflated)   
