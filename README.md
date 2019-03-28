@@ -112,3 +112,6 @@ Read [here](https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/utils/re
 
 Follow the instructions [here](https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/utils/qc_jsons_to_tsv/README.md). 
 
+Descriptions for some important QC metrics/files are available [here](https://github.com/nicolerg/motrpac_atac_mop#5-compile-important-qc-metrics).
+
+
