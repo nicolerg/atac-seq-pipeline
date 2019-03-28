@@ -30,14 +30,15 @@ outdir=/path/to/output
 cd ${outdir} # pipeline outputs are writted to pwd
 sbatch ${srcdir}/examples/scg/ENCSR356KRQ_subsampled_scg_conda.sh
 ```
-Once the test finishes running, outputs for this sample are located in `${outdir}/cromwell-executions/atac/${random-hash}`. Read more about the output directory specs [here](https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/docs/output.md) or [here (my own more detailed version)](https://github.com/nicolerg/motrpac_atac_mop#43-output-directory-structure). 
+Once the test finishes running, outputs for this sample are located in `${outdir}/cromwell-executions/atac/${random-hash}`. Read more about the output directory specs [here (ENCODE's version)](https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/docs/output.md) or [here (my more detailed version)](https://github.com/nicolerg/motrpac_atac_mop#43-output-directory-structure). 
 
 ## 3. Run the pipeline for a batch of samples (starting from FASTQ files)
 
 Note that [Step 3.1](https://github.com/nicolerg/atac-seq-pipeline#31-make-a-json-template-for-your-project) and [Step 3.2](https://github.com/nicolerg/atac-seq-pipeline#32-generate-json-files-for-all-samples) are specific for starting the pipeline from FASTQ files (the most upstream step). It is also possible to start the pipeline from the following intermediate files:  
 * Raw BAM files  
 * Filtered/deduped BAM files  
-* tagAlign files (downstream of filtered BAMs)  
+* tagAlign files (downstream of filtered BAMs)   
+
 Refer to https://github.com/ENCODE-DCC/atac-seq-pipeline/blob/master/docs/input.md to see how these inputs are defined in the JSON file if you do not want to start from FASTQs.    
 
 ### 3.1 Make a JSON template for your project
