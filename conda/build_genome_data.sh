@@ -105,9 +105,9 @@ elif [[ $GENOME == "mm10_chr19_chrM" ]]; then
   BLACKLIST="https://storage.googleapis.com/encode-pipeline-genome-data/mm10/mm10.blacklist.bed.gz"
 
 elif [[ $GENOME == "rn6" ]]; then
-  REF_FA="ftp://ftp.ensembl.org/pub/release-94/fasta/rattus_norvegicus/dna/Rattus_norvegicus.Rnor_6.0.dna_rm.toplevel.fa.gz"
-  BLACKLIST="http://web.stanford.edu/~nicolerg/blacklist.bed.gz"
-  TSS_ENRICH="http://web.stanford.edu/~nicolerg/tss.rn6.bed.gz"
+  REF_FA="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/Rattus_norvegicus.Rnor_6.0.dna.toplevel.standardized.fa.gz"
+  BLACKLIST="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/null_blacklist.bed.gz"
+  TSS_ENRICH="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/rn6_ensembl_tss.bed.gz"
 
 elif [[ $GENOME == "YOUR_OWN_GENOME" ]]; then
   REF_FA="URL_FOR_YOUR_FASTA_OR_2BIT"
