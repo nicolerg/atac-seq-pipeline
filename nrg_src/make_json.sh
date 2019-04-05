@@ -5,11 +5,13 @@
 
 set -e
 
-fastq_dir=/path/to/raw/fastq/files
-json_dir=/path/to/output/directory
+fastq_dir=/labs/smontgom/nicolerg/MOTRPAC/ATAC/FASTQ/RUN9
+json_dir=/labs/smontgom/nicolerg/MOTRPAC/ATAC/JSON/RUN9
+json_base=/labs/smontgom/nicolerg/src/MOTRPAC/ATAC/rat_base.json
+
 mkdir -p ${json_dir}
 
-samples=$(ls | grep "fastq.gz" | grep "L0" | grep -v "Undetermined" | grep -E "R1|R2" | sed "s/_L00.*//" | sort | uniq)
+samples=$(ls $fastq_dir | grep "fastq.gz" | grep "L0" | grep -v "Undetermined" | grep -E "R1|R2" | sed "s/_L00.*//" | sort | uniq)
 
 for i in $samples; do
 
@@ -20,14 +22,14 @@ for i in $samples; do
     echo "    \"atac.title\" : \"${i}\"," >> ${json_file}
 
     # standard parameters for this project
-    echo ${json_base} >> ${json_file}
+    cat ${json_base} >> ${json_file}
 
     # add paths to FASTQ files 
     echo "    \"atac.fastqs_rep1_R1\" : [" >> ${json_file}
     
     lanes=$(ls ${fastq_dir} | grep "$i" | grep "L00" | grep "R1" | wc -l)
     counter=1
-    for r1 in $(ls ${fastq_dir} | grep "$i" | grep "L00" | grep "R1" | wc -l); do
+    for r1 in $(ls ${fastq_dir} | grep "$i" | grep "L00" | grep "R1"); do
         if [ "$counter" = "$lanes" ]; then
             echo "        \"${fastq_dir}/${r1}\"" >> ${json_file}
         else
@@ -41,7 +43,7 @@ for i in $samples; do
     echo "    \"atac.fastqs_rep1_R2\" : [" >> ${json_file}
 
     counter=1
-    for r2 in $(ls ${fastq_dir} | grep "$i" | grep "L00" | grep "R2" | wc -l); do
+    for r2 in $(ls ${fastq_dir} | grep "$i" | grep "L00" | grep "R2"); do
         if [ "$counter" = "$lanes" ]; then
             echo "        \"${fastq_dir}/${r2}\"" >> ${json_file}
         else
@@ -49,7 +51,7 @@ for i in $samples; do
         fi
         counter=$((counter +1))
     done
-    echo "    ]," >> ${json_file}
+    echo "    ]" >> ${json_file}
     echo >> ${json_file}
 
     echo "}" >> ${json_file}
