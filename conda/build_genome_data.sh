@@ -7,7 +7,7 @@ if [[ "$#" -lt 2 ]]; then
   echo "This script installs data for genome [GENOME] on a directory [DEST_DIR]."
   echo "A TSV file [DEST_DIR]/[GENOME].tsv will be generated. Use it for pipeline."
   echo
-  echo "Supported genomes: hg19, mm9, hg38 and mm10"
+  echo "Supported genomes: hg19, mm9, hg38, mm10, motrpac_hg38, motrpac_rn6"
   echo
   echo "Usage: ./build_genome_data.sh [GENOME] [DEST_DIR]"
   echo "  Example: ./build_genome_data.sh hg38 /your/genome/data/path/hg38"
@@ -103,6 +103,16 @@ elif [[ $GENOME == "hg38_chr19_chrM" ]]; then
 elif [[ $GENOME == "mm10_chr19_chrM" ]]; then
   REF_FA="https://storage.googleapis.com/encode-pipeline-genome-data/mm10_chr19_chrM/mm10_no_alt_analysis_set_ENCODE.chr19_chrM.fasta.gz"
   BLACKLIST="https://storage.googleapis.com/encode-pipeline-genome-data/mm10/mm10.blacklist.bed.gz"
+
+elif [[ $GENOME == "motrpac_rn6" ]]; then
+  REF_FA="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/Rattus_norvegicus.Rnor_6.0.dna.toplevel.standardized.fa.gz"
+  BLACKLIST="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/null_blacklist.bed.gz"
+  TSS_ENRICH="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/rn6_ensembl_tss.bed.gz"
+  
+elif [[ $GENOME == "motrpac_hg38" ]]; then
+  REF_FA="ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_30/GRCh38.primary_assembly.genome.fa.gz"
+  BLACKLIST=
+  TSS_ENRICH=
 
 elif [[ $GENOME == "YOUR_OWN_GENOME" ]]; then
   REF_FA="URL_FOR_YOUR_FASTA_OR_2BIT"
