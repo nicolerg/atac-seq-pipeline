@@ -107,12 +107,12 @@ elif [[ $GENOME == "mm10_chr19_chrM" ]]; then
 elif [[ $GENOME == "motrpac_rn6" ]]; then
   REF_FA="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/Rattus_norvegicus.Rnor_6.0.dna.toplevel.standardized.fa.gz"
   BLACKLIST="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/null_blacklist.bed.gz"
-  TSS_ENRICH="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/rn6_ensembl_tss.bed.gz"
+  TSS="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/rn6_ensembl_tss.bed.gz"
   
 elif [[ $GENOME == "motrpac_hg38" ]]; then
   REF_FA="ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_30/GRCh38.primary_assembly.genome.fa.gz"
   BLACKLIST=
-  TSS_ENRICH=
+  TSS=
 
 elif [[ $GENOME == "YOUR_OWN_GENOME" ]]; then
   REF_FA="URL_FOR_YOUR_FASTA_OR_2BIT"
