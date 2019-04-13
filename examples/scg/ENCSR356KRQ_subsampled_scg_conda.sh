@@ -48,7 +48,7 @@ python -c "import pysam"
 #  (examples/template_se.json, examples/template_pe.json)
 #  do not use an input JSON file for a test sample (ENCSR356KRQ)
 #  it's a sample with multimapping reads
-srcdir=/labs/smontgom/shared/atac_encode_pl/atac-seq-pipeline
+srcdir=/labs/smontgom/shared/atac_encode_pl/scg-atac-seq-pipeline
 INPUT=${srcdir}/examples/scg/ENCSR356KRQ_subsampled_scg.json
 
 # If this pipeline fails, then use this metadata JSON file to resume a failed pipeline from where it left 
@@ -67,4 +67,4 @@ NUM_CONCURRENT_TASK=2
 #  you can monitor your jobs with "squeue -u $USER"
 java -jar -Dconfig.file=${srcdir}/backends/backend.conf \
 -Dbackend.providers.Local.config.concurrent-job-limit=${NUM_CONCURRENT_TASK} \
-$HOME/cromwell-34.jar run ${srcdir}/atac.wdl -i ${INPUT} -m ${PIPELINE_METADATA}
+$HOME/cromwell-38.jar run ${srcdir}/atac.wdl -i ${INPUT} -m ${PIPELINE_METADATA}
