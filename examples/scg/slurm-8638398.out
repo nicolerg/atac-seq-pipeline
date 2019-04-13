@@ -1,0 +1,76 @@
+[2019-04-12 12:46:13,63] [info] Running with database db.url = jdbc:hsqldb:mem:eb9e6954-97de-49ad-9a45-18c7fbbbfb5d;shutdown=false;hsqldb.tx=mvcc
+[2019-04-12 12:46:23,23] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
+[2019-04-12 12:46:23,24] [info] [RenameWorkflowOptionsInMetadata] 100%
+[2019-04-12 12:46:23,43] [info] Running with database db.url = jdbc:hsqldb:mem:ac03bd2c-89b4-450b-a12c-cb9fb6a95541;shutdown=false;hsqldb.tx=mvcc
+[2019-04-12 12:46:23,78] [[38;5;220mwarn[0m] This actor factory is deprecated. Please use cromwell.backend.google.pipelines.v1alpha2.PipelinesApiLifecycleActorFactory for PAPI v1 or cromwell.backend.google.pipelines.v2alpha1.PipelinesApiLifecycleActorFactory for PAPI v2
+[2019-04-12 12:46:24,09] [info] Slf4jLogger started
+[2019-04-12 12:46:24,37] [info] Workflow heartbeat configuration:
+{
+  "cromwellId" : "cromid-596c693",
+  "heartbeatInterval" : "2 minutes",
+  "ttl" : "10 minutes",
+  "writeBatchSize" : 10000,
+  "writeThreshold" : 10000
+}
+[2019-04-12 12:46:24,44] [info] Metadata summary refreshing every 2 seconds.
+[2019-04-12 12:46:24,61] [[38;5;220mwarn[0m] 'docker.hash-lookup.gcr-api-queries-per-100-seconds' is being deprecated, use 'docker.hash-lookup.gcr.throttle' instead (see reference.conf)
+[2019-04-12 12:46:24,65] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
+[2019-04-12 12:46:24,66] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
+[2019-04-12 12:46:24,66] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
+[2019-04-12 12:46:24,74] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
+[2019-04-12 12:46:24,92] [info] SingleWorkflowRunnerActor: Version 38
+[2019-04-12 12:46:24,94] [info] SingleWorkflowRunnerActor: Submitting workflow
+[2019-04-12 12:46:25,04] [info] Unspecified type (Unspecified version) workflow 76627379-4936-46da-8a73-093911d2ade7 submitted
+[2019-04-12 12:46:25,06] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2m76627379-4936-46da-8a73-093911d2ade7[0m
+[2019-04-12 12:46:25,07] [info] 1 new workflows fetched
+[2019-04-12 12:46:25,07] [info] WorkflowManagerActor Starting workflow [38;5;2m76627379-4936-46da-8a73-093911d2ade7[0m
+[2019-04-12 12:46:25,09] [info] WorkflowManagerActor Successfully started WorkflowActor-76627379-4936-46da-8a73-093911d2ade7
+[2019-04-12 12:46:25,10] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
+[2019-04-12 12:46:25,10] [info] Retrieved 1 workflows from the WorkflowStoreActor
+[2019-04-12 12:46:25,47] [info] JES batch polling interval is 33333 milliseconds
+[2019-04-12 12:46:25,47] [info] JES batch polling interval is 33333 milliseconds
+[2019-04-12 12:46:25,49] [info] JES batch polling interval is 33333 milliseconds
+[2019-04-12 12:46:25,54] [info] MaterializeWorkflowDescriptorActor [[38;5;2m76627379[0m]: Parsing workflow as WDL draft-2
+[2019-04-12 12:46:25,58] [info] PAPIQueryManager Running with 3 workers
+[2019-04-12 12:46:29,76] [info] Not triggering log of token queue status. Effective log interval = None
+[2019-04-12 12:46:30,52] [info] MaterializeWorkflowDescriptorActor [[38;5;2m76627379[0m]: Call-to-Backend assignments: atac.idr_ppr -> local, atac.bam2ta -> local, atac.bowtie2 -> local, atac.macs2_pooled -> local, atac.xcor -> local, atac.idr_pr -> local, atac.filter -> local, atac.count_signal_track -> local, atac.qc_report -> local, atac.macs2_ppr1 -> local, atac.macs2_pr1 -> local, atac.macs2_signal_track_pooled -> local, atac.idr -> local, atac.spr -> local, atac.count_signal_track_pooled -> local, atac.reproducibility_idr -> local, atac.overlap -> local, atac.overlap_ppr -> local, atac.reproducibility_overlap -> local, atac.overlap_pr -> local, atac.macs2_ppr2 -> local, atac.pool_ta_pr2 -> local, atac.trim_adapter -> local, atac.ataqc -> local, atac.macs2 -> local, atac.pool_ta_pr1 -> local, atac.pool_ta -> local, atac.macs2_pr2 -> local, atac.macs2_signal_track -> local, atac.read_genome_tsv -> local
+[2019-04-12 12:46:30,61] [[38;5;1merror[0m] Error parsing generated wdl:
+
+java.lang.RuntimeException: Error parsing generated wdl:
+
+	at cromwell.backend.impl.sfs.config.ConfigWdlNamespace.<init>(ConfigWdlNamespace.scala:55)
+	at cromwell.backend.impl.sfs.config.ConfigInitializationActor.configWdlNamespace$lzycompute(ConfigInitializationActor.scala:39)
+	at cromwell.backend.impl.sfs.config.ConfigInitializationActor.configWdlNamespace(ConfigInitializationActor.scala:39)
+	at cromwell.backend.impl.sfs.config.ConfigInitializationActor.declarationValidations$lzycompute(ConfigInitializationActor.scala:42)
+	at cromwell.backend.impl.sfs.config.ConfigInitializationActor.declarationValidations(ConfigInitializationActor.scala:41)
+	at cromwell.backend.impl.sfs.config.ConfigInitializationActor.runtimeAttributesBuilder$lzycompute(ConfigInitializationActor.scala:53)
+	at cromwell.backend.impl.sfs.config.ConfigInitializationActor.runtimeAttributesBuilder(ConfigInitializationActor.scala:52)
+	at cromwell.backend.standard.StandardInitializationActor.coerceDefaultRuntimeAttributes(StandardInitializationActor.scala:82)
+	at cromwell.backend.BackendWorkflowInitializationActor.initSequence(BackendWorkflowInitializationActor.scala:155)
+	at cromwell.backend.BackendWorkflowInitializationActor.initSequence$(BackendWorkflowInitializationActor.scala:153)
+	at cromwell.backend.standard.StandardInitializationActor.initSequence(StandardInitializationActor.scala:44)
+	at cromwell.backend.BackendWorkflowInitializationActor$$anonfun$receive$1.$anonfun$applyOrElse$1(BackendWorkflowInitializationActor.scala:146)
+	at cromwell.backend.BackendLifecycleActor.performActionThenRespond(BackendLifecycleActor.scala:44)
+	at cromwell.backend.BackendLifecycleActor.performActionThenRespond$(BackendLifecycleActor.scala:40)
+	at cromwell.backend.standard.StandardInitializationActor.performActionThenRespond(StandardInitializationActor.scala:44)
+	at cromwell.backend.BackendWorkflowInitializationActor$$anonfun$receive$1.applyOrElse(BackendWorkflowInitializationActor.scala:146)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at cromwell.backend.standard.StandardInitializationActor.aroundReceive(StandardInitializationActor.scala:44)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.IllegalArgumentException: Could not build AST from workflow source. Source is empty or contains only comments and whitespace.
+	at wdl.draft2.model.WdlNamespace$.$anonfun$load$1(WdlNamespace.scala:166)
+	at scala.util.Try$.apply(Try.scala:209)
+	at wdl.draft2.model.WdlNamespace$.load(WdlNamespace.scala:159)
+	at wdl.draft2.model.WdlNamespace$.loadUsingSource(WdlNamespace.scala:156)
+	at cromwell.backend.impl.sfs.config.ConfigWdlNamespace.<init>(ConfigWdlNamespace.scala:53)
+	... 27 common frames omitted
+slurmstepd: error: *** JOB 8638398 ON sgisummit-frcf-111-18 CANCELLED AT 2019-04-12T12:48:43 ***

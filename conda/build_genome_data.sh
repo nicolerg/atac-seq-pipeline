@@ -104,11 +104,6 @@ elif [[ $GENOME == "mm10_chr19_chrM" ]]; then
   REF_FA="https://storage.googleapis.com/encode-pipeline-genome-data/mm10_chr19_chrM/mm10_no_alt_analysis_set_ENCODE.chr19_chrM.fasta.gz"
   BLACKLIST="https://storage.googleapis.com/encode-pipeline-genome-data/mm10/mm10.blacklist.bed.gz"
 
-elif [[ $GENOME == "rn6" ]]; then
-  REF_FA="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/Rattus_norvegicus.Rnor_6.0.dna.toplevel.standardized.fa.gz"
-  BLACKLIST="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/null_blacklist.bed.gz"
-  TSS="http://mitra.stanford.edu/montgomery/projects/motrpac/atac/references/rn6/rn6_ensembl_tss.bed.gz"
-
 elif [[ $GENOME == "YOUR_OWN_GENOME" ]]; then
   REF_FA="URL_FOR_YOUR_FASTA_OR_2BIT"
   BLACKLIST= # leave it empty if you don't have it
