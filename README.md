@@ -8,7 +8,7 @@ On SCG4, execute the following code:
 ```bash
 # download cromwell to $HOME
 cd 
-wget https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
+wget https://github.com/broadinstitute/cromwell/releases/download/38/cromwell-38.jar
 chmod +rx cromwell-38.jar
 
 screen -S install-encode # this takes a little while, so do it within a screen session 
