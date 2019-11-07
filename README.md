@@ -9,7 +9,7 @@ On SCG4, execute the following code:
 # download cromwell to $HOME
 cd 
 wget https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
-chmod +rx cromwell-34.jar
+chmod +rx cromwell-38.jar
 
 screen -S install-encode # this takes a little while, so do it within a screen session 
 module load miniconda/3 # load conda module
