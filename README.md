@@ -1,3 +1,8 @@
+# DEPRECATED. Please see https://github.com/smontgomlab/scg_atac-seq-pipeline. Relevant components of this repository are being moved over. 
+
+
+
+
 # Run the ENCODE ATAC-seq pipeline on SCG4
 
 This repository is forked from the [ENCODE ATAC-seq pipeline repository](https://github.com/ENCODE-DCC/atac-seq-pipeline) to provide helper scripts and additional documentation specific for Montgomery Lab implementation of the pipeline on SCG. Please refer to the [ENCODE ATAC-seq pipeline repository](https://github.com/ENCODE-DCC/atac-seq-pipeline) for original documentation and use outside of this scope. 
