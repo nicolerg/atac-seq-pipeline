@@ -1,2 +1,2 @@
 # DEPRECATED 
-## Please see https://github.com/smontgomlab/scg_atac-seq-pipeline. 
+Talk to Nicole if you want to run the ENCODE ATAC-seq pipeline
